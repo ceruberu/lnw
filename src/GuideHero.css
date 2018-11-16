@@ -1,0 +1,112 @@
+.heroSplash {
+  width: 100%;
+}
+
+.heroTitle {
+  display: flex;
+  position: relative;
+  top: -30px;
+  padding: 0px 20px;
+  margin-bottom: -30px;
+}
+
+.heroIcon {
+  width: 80px;
+  height: 80px;
+}
+
+.heroBigName {
+  margin-top: 30px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #4A90E2;
+  font-weight: bold;
+}
+
+.heroSkillList {
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+.skill {
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+}
+
+.skill.active {
+  opacity: 1;
+}
+
+.heroSkillDescription {
+  padding: 0px 20px;
+}
+
+.heroSkillName {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.heroSkillCooldown {
+  margin-left: 20px;
+  font-size: 14px;
+  color: orange;
+}
+
+.heroSkillMana {
+  margin-left: 20px;
+  font-size: 14px;
+  color: #0965B7;
+}
+
+.heroSkillDetail {
+  padding: 10px 0px;
+  font-size: 14px;
+}
+
+.guideCleanCard {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 60px;
+  padding: 5px 0px;
+}
+
+.guideCleanTitle {
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.guideCleanMeta {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.guideViewCount {
+  color: grey;
+}
+
+.guideLikeCount {
+  color: grey; 
+  margin-left: 5px;
+}
+
+.guideCommentCount {
+  color: grey; 
+  margin-left: 5px;
+}
+
+.guideAuthor {
+  color: #0B81EA;
+  margin-left: 5px;
+}

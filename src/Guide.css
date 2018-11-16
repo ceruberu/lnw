@@ -26,6 +26,8 @@
   align-items: center;
   height: 60px;
   width: 60px;
+  text-decoration: none;
+  color: black;
 }
 
 .heroThumbnail {
@@ -40,7 +42,6 @@
 .guideCardList {
   display: flex;
   flex-direction: column;
-  padding: 10px 0px;
 }
 
 .guideCard {

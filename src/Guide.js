@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import './Guide.css';
 import Assassin from './images/classes/Assassin.png';
@@ -10,12 +10,17 @@ import Tank from './images/classes/Tank.png';
 import Warrior from './images/classes/Warrior.png';
 import Icon from './images/heroes/Airi/icon.jpg';
 
+const MockHero = {
+  'airi' : {
+    type: "Assassin"
+  }
+};
 
 const Hero = (i) => 
-  <div className="hero" key={i}>
+  <Link to="/guide/hero/airi" className="hero" key={i}>
     <img className="heroThumbnail" alt="Airi" src={Icon} />
     <span className="heroName">Airi</span>
-  </div>;
+  </Link>;
 
 const GuideCard = (i) =>
   <div className="guideCard" key={i}>
