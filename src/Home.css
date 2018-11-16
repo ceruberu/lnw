@@ -1,0 +1,10 @@
+section {
+  padding: 10px 20px;
+}
+
+.sectionTitle {
+  margin: 0px;
+  font-size: 18px;
+  color: #053B6B;
+  font-weight: bold;
+}

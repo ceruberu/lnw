@@ -1,0 +1,39 @@
+.previewTable {
+ border-bottom: 1px solid #ebeef1;
+}
+
+.previewTitle {
+  box-sizing: border-box;
+  padding: 10px 20px;
+}
+
+.previewContent {
+  box-sizing: border-box;
+  padding: 10px 20px;
+  border-top: 1px solid #ebeef1;
+}
+
+.previewGuide {
+  display: flex;
+  flex-direction: row;
+}
+
+.previewGuideTitle {
+  font-size: 15px;
+  height: 60px;
+}
+
+.previewGuideMeta {
+  font-size: 15px;
+  height: 20px;
+}
+
+.previewHero {
+  height: 80px;
+  width: 80px;
+}
+
+.previewInfo {
+  flex: 1;
+  padding-left: 12px;
+}

@@ -1,0 +1,17 @@
+{
+  "guides" : {
+    "title" : "how to play wukong 101",
+    "hero" : "wukong",
+    "runes" : ["crit chance", "atkspeed", "crit dmg"],
+    "spell" : "smite",
+    "content" : "jungle route -> 1 -> 2 -> 3-> 4-> 5 -> gank",
+    "createdAt" : "2018-10-26",
+    "recommended" : true,
+    "likes" : 29
+  },
+  
+  "posts" : {
+
+  }
+
+}
