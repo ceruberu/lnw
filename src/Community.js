@@ -1,22 +1,51 @@
 import React, { Component } from 'react';
-import './Home.css';
+import './Community.css';
+import Thumbnail from './images/example.jpg';
 
-class Home extends Component {
+const Post = (i) => (
+  <div className="postCard" key={i}>
+    <img 
+      className="postCardThumbnail" 
+      alt="Thumbnail"
+      src={Thumbnail}
+    />
+    <div className="postCardMeta">
+      <div className="postCardTitle">
+        อยากเลิกเล่น ROV กับแฟนต้องทำยังไงครับ
+      </div>
+      <div className="postCardDetails">
+        <span className="postCardLike">30 likes</span>
+        <span className="postCardCreatedAt">10 hours ago</span>
+        <span className="postCardAuthor">ceruberu</span>
+      </div>
+    </div>  
+  </div>
+);
+
+class Community extends Component {
   render() {
+    const Posts = [];
+    for (var i = 0; i < 10; i++) {
+      Posts.push(Post(i))
+    }
+
     return (
-      <div>
-        <section>
-          <header className="sectionTitle">
-            Guide of the Day
-          </header>
-          <div className="guideOfDay">
-            <span>Diao chan เทคนิคการออกของ SS7 วิเคราะห์ไอเทมทุกชิ้น</span>
-          </div>
-        </section>
+      <div className="communityMain">
+        <div className="boardTypeList">
+          <div className="boardType">News</div>
+          <div className="boardType">General</div>
+          <div className="boardType">Funny</div>
+        </div>
+        <div>
+          <h2 className="communityTitle">Trending</h2>
+        </div>
+        <div className="postCardList">
+          { Posts }
+        </div>
       </div>
 
     );
   }
 }
 
-export default Home;
+export default Community;
