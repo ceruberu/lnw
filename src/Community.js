@@ -36,12 +36,16 @@ class Community extends Component {
           <div className="boardType">General</div>
           <div className="boardType">Funny</div>
         </div>
-        <div>
-          <h2 className="communityTitle">Trending</h2>
-        </div>
-        <div className="postCardList">
-          { Posts }
-        </div>
+        <section>
+          <div>
+            <header className="sectionTitle">
+              Trending
+            </header>
+          </div>
+          <div className="postCardList">
+            { Posts }
+          </div> 
+        </section>
       </div>
 
     );

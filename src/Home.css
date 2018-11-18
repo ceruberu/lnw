@@ -9,3 +9,41 @@ section {
   font-weight: bold;
   margin-bottom: 20px;
 }
+
+.guideOfTheDay {
+  display: flex;
+  flex-direction: column;
+}
+
+.guideOfTheDay{
+  height: 200px;
+  border-radius: 6px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0, 0),
+    rgba(0,0,0, 100)
+  ),url(./images/splash.jpg) center center no-repeat;
+  background-size: cover;
+  color: white;
+  box-sizing: border-box;
+  justify-content: flex-end;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+/* 
+.guideOfTheDayImage {
+  opacity: 0.5;
+  height: 200px;
+  width: 100%;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+} */
+/* 
+.guideOfTheDayTitle {
+  color: white;
+  font-size: 14px;
+  position: relative;
+  top:50%;
+  left: 50%;
+} */
