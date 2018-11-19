@@ -23,7 +23,7 @@ const Hero = (i) =>
   </Link>;
 
 const GuideCard = (i) =>
-  <div className="guideCard" key={i}>
+  <Link to="guide/post/001" className="guideCard" key={i}>
     <img className="guideThumbnail" alt="Airi" src={Icon} />
     <div className="guideMeta">
       <div className="guideTitle">
@@ -35,7 +35,7 @@ const GuideCard = (i) =>
         <span> 5 comments</span>
       </div>
     </div>
-  </div>;
+  </Link>;
 
 class Guide extends Component {
   render() {

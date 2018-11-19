@@ -1,0 +1,101 @@
+.guidePostCard {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.guidePostTitle {
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  word-break: break-all;
+}
+
+.guidePostMeta {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.guideViewCount {
+  color: grey;
+}
+
+.guideLikeCount {
+  color: grey; 
+  margin-left: 5px;
+}
+
+.guideCommentCount {
+  color: grey; 
+  margin-left: 5px;
+}
+
+.guideAuthor {
+  color: #0B81EA;
+  margin-left: 5px;
+}
+
+.guideSpell {
+  width: 50px;
+  height: 50px;
+  margin-right: 16px;
+}
+
+.skillTree {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.skillTreeHeader div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillTreeRow {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.skillTreeRow div {
+  flex: 1;
+  box-sizing: border-box;
+  border-collapse: collapse;
+  margin: 1px;
+}
+
+.skillTreeLevel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checked {
+  background-color: #4A90E2;
+}
+
+.item {
+  width: 50px;
+  height: 50px;
+}
+
+.itemBuildName {
+  color: #4A90E2;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.itemBuild {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 6px;
+}
