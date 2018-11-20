@@ -8,6 +8,27 @@ import Skill2 from './images/heroes/Airi/Abillities/2.png';
 import Ultimate from './images/heroes/Airi/Abillities/3.png';
 import flicker from './images/spells/flicker.png';
 import execute from './images/spells/execute.png';
+import runeData from './images/runes.json';
+
+function getTotalRuneEffects (runeEffect, runeAmount) {
+  if (runeAmount === 1) {
+    return runeEffect;
+  }
+
+  let resultEffect = [];
+  const listEffects = runeEffect.split('\n');
+  listEffects.forEach((effect, i) => {
+    const [ description, amount ] = effect.split(': ');
+    const isPercent = amount.slice(amount.length-1) === '%';
+    resultEffect.push(
+      <div className="runeEffect">
+       {`${description}: ${(parseFloat(amount)*100*runeAmount) / 100}${isPercent ? '%' : ''}`}
+      </div>
+    ) 
+  })
+
+  return resultEffect;
+}
 
 const mockHeroGuide = {
   id: 1,
@@ -25,29 +46,21 @@ const mockHeroGuide = {
     name: "VS Balanced",
     build: [103,114,203,404,503,603]
   }],
-  arcana: [{
+  runeBuilds: [{
     name: "VS Attack",
-    red: {
-      onSlaught: 1,
-      batter: 8
-    },
-    purple: {
-      shield: 9
-    },
-    green: {
-      haste: 9
+    runes: {
+      101: 1,
+      102: 8,
+      201: 9,
+      302: 9
     }
   },{
     name: "VS Magic",
-    red: {
-      onSlaught: 1,
-      batter: 8
-    },
-    purple: {
-      magicShield: 9
-    },
-    green: {
-      haste: 9
+    runes: {
+      101: 1,
+      103: 8,
+      202: 9,
+      303: 9
     }
   }],
   intro: "Van Helsing เป็นฮีโร่ที่จัดอยู่ในกลุ่มแครี่ ซึ่งมีความสามารถในการทำดาเมจได้หนักหน่วงมากๆ อีกทั้งยังมีสกิลที่เพิ่มความเร็วในระยะเวลาสั้นๆ ทำให้เค้าสามารถทำการ kite (ตอดศัตรูจากระยะไกล)  ได้ดีเพราะสามารถเคลื่อนที่ไปมาได้รวดเร็วจากผลของสกิลแทบจะทุกท่าของเค้า อีกทั้งยังมีท่าที่สามารถทำให้ศัตรูสตั๊นได้ถึง 2 สกิลด้วยกันคือ  Pocket Glaive และ Curse of Death ส่วนเลนที่ไปนั้น เค้าสามารถไปได้ทั้งเลนคู่และเลนเดี่ยว แต่จะให้ดีไปกับเพื่อนที่มีสกิล หยุดศัตรูด้วยอีกแรงจะทำให้เก็บแต้มได้ง่ายขึ้นมาก",
@@ -153,7 +166,7 @@ class GuidePost extends Component {
 
     const ItemTree = (itemTrees) => {
       const itemBuilds = [];
-      itemTrees.forEach(({ name, build }, i)=>{
+      itemTrees.forEach(({ name, build }, i) => {
         const itemBuild = [];
         build.forEach((item, i) => {
           itemBuild.push(
@@ -172,6 +185,42 @@ class GuidePost extends Component {
         )
       })
       return itemBuilds;
+    }
+
+    const RuneTree = (runeTrees) => {
+      const runeBuilds = [];
+      runeTrees.forEach(({ name, runes }, i) => {
+        const runeBuild = [];
+        const runesList = Object.keys(runes);
+        const sortedRunesList = runesList.sort();
+
+        sortedRunesList.forEach((rune, k) => {
+          const runeName = runeData[rune].name;
+          const runeEffect = runeData[rune].effect;
+          const runeNumber = runes[rune];
+
+          const totalRuneEffects = getTotalRuneEffects(runeEffect, runeNumber);
+
+
+          runeBuild.push(
+            <div key={k} className="runeCol">
+              <img className="rune" alt="rune" src={`https://s3-ap-southeast-1.amazonaws.com/lnw-static/runes/${rune}.png`} />
+              <div className="runeName">{`${runeName} x ${runeNumber}`}</div>
+              <div className="runeMeta"> {totalRuneEffects} </div>
+            </div>
+          )
+        });
+
+        runeBuilds.push(
+          <div key={i} className="runeBuild">
+            <div className="runeBuildName">
+              { name }
+            </div>
+            { runeBuild }
+          </div>
+        )
+      })
+      return runeBuilds;
     }
 
     return (
@@ -256,11 +305,15 @@ class GuidePost extends Component {
         </section>
         <section>
           <header className="sectionTitle">Skills</header>
-          { SkillTree(mockHeroGuide.skill)}
+          { SkillTree(mockHeroGuide.skill) }
         </section>
         <section>
           <header className="sectionTitle">Item Build</header>
-          { ItemTree(mockHeroGuide.itemBuilds)}
+          { ItemTree(mockHeroGuide.itemBuilds) }
+        </section>
+        <section>
+          <header className="sectionTitle">Runes</header>
+          { RuneTree(mockHeroGuide.runeBuilds) }
         </section>
       </div>
     );
