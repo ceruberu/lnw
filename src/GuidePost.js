@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
+import { formatDistance, subDays } from 'date-fns';
+import th from 'date-fns/locale/th';
 import './GuidePost.css';
+
 import Splash from './images/heroes/Airi/Skins/splash.png';
 import Icon from './images/heroes/Airi/icon.jpg';
 import Passive from './images/heroes/Airi/Abillities/0.png';
 import Skill1 from './images/heroes/Airi/Abillities/1.png';
 import Skill2 from './images/heroes/Airi/Abillities/2.png';
 import Ultimate from './images/heroes/Airi/Abillities/3.png';
-import flicker from './images/spells/flicker.png';
-import execute from './images/spells/execute.png';
 import runeData from './images/runes.json';
+import profilePic from './images/display.jpg';
+
+const staticAddress = 'https://s3-ap-southeast-1.amazonaws.com/lnw-static';
 
 function getTotalRuneEffects (runeEffect, runeAmount) {
   if (runeAmount === 1) {
@@ -21,13 +25,38 @@ function getTotalRuneEffects (runeEffect, runeAmount) {
     const [ description, amount ] = effect.split(': ');
     const isPercent = amount.slice(amount.length-1) === '%';
     resultEffect.push(
-      <div className="runeEffect">
+      <div key={`runeEffect${i}`} className="runeEffect">
        {`${description}: ${(parseFloat(amount)*100*runeAmount) / 100}${isPercent ? '%' : ''}`}
       </div>
     ) 
   })
 
   return resultEffect;
+}
+
+function commentsTree (comments) {
+  const commentsArray = [];
+  comments.forEach((comment, i) => {
+    const timeInDistance = formatDistance(
+      comment.createdAt,
+      new Date(),
+      { addSuffix: true, locale: th }
+    );
+    commentsArray.push(
+      <div key={`comment${i}`} className="comment">
+        <div className="commentMeta">
+          <img className="commentProfile" alt="profile" src={profilePic} />
+          <div className="commentAuthor">{comment.username}</div>
+          <div className="commentCreatedAt">{timeInDistance}</div>
+        </div>
+        <div className="commentContent">
+          { comment.comment }
+        </div>
+      </div>
+    )
+  })
+  return commentsArray;
+
 }
 
 const mockHeroGuide = {
@@ -64,7 +93,18 @@ const mockHeroGuide = {
     }
   }],
   intro: "Van Helsing เป็นฮีโร่ที่จัดอยู่ในกลุ่มแครี่ ซึ่งมีความสามารถในการทำดาเมจได้หนักหน่วงมากๆ อีกทั้งยังมีสกิลที่เพิ่มความเร็วในระยะเวลาสั้นๆ ทำให้เค้าสามารถทำการ kite (ตอดศัตรูจากระยะไกล)  ได้ดีเพราะสามารถเคลื่อนที่ไปมาได้รวดเร็วจากผลของสกิลแทบจะทุกท่าของเค้า อีกทั้งยังมีท่าที่สามารถทำให้ศัตรูสตั๊นได้ถึง 2 สกิลด้วยกันคือ  Pocket Glaive และ Curse of Death ส่วนเลนที่ไปนั้น เค้าสามารถไปได้ทั้งเลนคู่และเลนเดี่ยว แต่จะให้ดีไปกับเพื่อนที่มีสกิล หยุดศัตรูด้วยอีกแรงจะทำให้เก็บแต้มได้ง่ายขึ้นมาก",
-  description: "Van Helsing เป็นฮีโร่ที่จัดอยู่ในกลุ่มแครี่ ซึ่งมีความสามารถในการทำดาเมจได้หนักหน่วงมากๆ อีกทั้งยังมีสกิลที่เพิ่มความเร็วในระยะเวลาสั้นๆ ทำให้เค้าสามารถทำการ kite (ตอดศัตรูจากระยะไกล)  ได้ดีเพราะสามารถเคลื่อนที่ไปมาได้รวดเร็วจากผลของสกิลแทบจะทุกท่าของเค้า อีกทั้งยังมีท่าที่สามารถทำให้ศัตรูสตั๊นได้ถึง 2 สกิลด้วยกันคือ  Pocket Glaive และ Curse of Death ส่วนเลนที่ไปนั้น เค้าสามารถไปได้ทั้งเลนคู่และเลนเดี่ยว แต่จะให้ดีไปกับเพื่อนที่มีสกิล หยุดศัตรูด้วยอีกแรงจะทำให้เก็บแต้มได้ง่ายขึ้นมาก"
+  description: "Van Helsing เป็นฮีโร่ที่จัดอยู่ในกลุ่มแครี่ ซึ่งมีความสามารถในการทำดาเมจได้หนักหน่วงมากๆ อีกทั้งยังมีสกิลที่เพิ่มความเร็วในระยะเวลาสั้นๆ ทำให้เค้าสามารถทำการ kite (ตอดศัตรูจากระยะไกล)  ได้ดีเพราะสามารถเคลื่อนที่ไปมาได้รวดเร็วจากผลของสกิลแทบจะทุกท่าของเค้า อีกทั้งยังมีท่าที่สามารถทำให้ศัตรูสตั๊นได้ถึง 2 สกิลด้วยกันคือ  Pocket Glaive และ Curse of Death ส่วนเลนที่ไปนั้น เค้าสามารถไปได้ทั้งเลนคู่และเลนเดี่ยว แต่จะให้ดีไปกับเพื่อนที่มีสกิล หยุดศัตรูด้วยอีกแรงจะทำให้เก็บแต้มได้ง่ายขึ้นมาก",
+  comments: [{
+    username: "neoDKK",
+    comment: "ตั้งเเต่ดูดอยมาคลิปนี้โครตมันอยากให้ทุกๆคลิปของพี่ดอยสนุกเเบบนี้นะคับ ทำต่อไปเรื่อยๆนะคับ﻿ ตั้งเเต่ดูดอยมาคลิปนี้โครตมันอยากให้ทุกๆคลิปของพี่ดอยสนุกเเบบนี้นะคับทำต่อไปเรื่อยๆนะคับ﻿",
+    likes: 51,
+    createdAt: subDays(new Date(), 1)
+  },{ 
+    username: "ceruberu",
+    comment: "555555",
+    likes: 0,
+    createdAt: subDays(new Date(), 2)
+  }]
 };
 
 const mockHeroSkills = [
@@ -96,7 +136,7 @@ const mockHeroSkills = [
 ];
 
 const Guide = (i) => (
-  <div className="guideCleanCard" key={i}>
+  <div className="guideCleanCard" key={`guideCard${i}`}>
     <span className="guideCleanTitle">
       Airi สายเปิดอัลติ นินจาสาวที่โลกลืม!asmndfm,nsadfmnasdlkfnlaksdfjlksajdflksjadlkfjasldk;j
     </span>
@@ -127,9 +167,6 @@ class GuidePost extends Component {
 
   render() {
     const { selectedSkill } = this.state;
-    
-    const Spells = { flicker, execute };
-    const Skills = [Passive, Skill1, Skill2, Ultimate];
 
     const SkillTree = (skillTree) => {
       const skillBuild = [];
@@ -138,9 +175,9 @@ class GuidePost extends Component {
         const skillBuildColumn = (
           <div className="skillTreeRow" key={`skillTree${i}`}>
             <div className="skillTreeLevel">{(i+1)}</div>
-            <div className={skillTree[i] === 1 && 'checked'}></div>
-            <div className={skillTree[i] === 2 && 'checked'}></div>
-            <div className={skillTree[i] === 3 && 'checked'}></div>
+            <div className={skillTree[i] === 1 ? 'checked' : undefined}></div>
+            <div className={skillTree[i] === 2 ? 'checked' : undefined}></div>
+            <div className={skillTree[i] === 3 ? 'checked' : undefined}></div>
           </div>
         );
         skillBuild.push(skillBuildColumn);
@@ -170,7 +207,7 @@ class GuidePost extends Component {
         const itemBuild = [];
         build.forEach((item, i) => {
           itemBuild.push(
-            <img className="item" key={`item${i}`} alt="item" src={`https://s3-ap-southeast-1.amazonaws.com/lnw-static/armory/${item}.png`} />
+            <img className="item" key={`item${i}`} alt="item" src={`${staticAddress}/armory/${item}.png`} />
           )
         });
         itemBuilds.push(
@@ -203,8 +240,8 @@ class GuidePost extends Component {
 
 
           runeBuild.push(
-            <div key={k} className="runeCol">
-              <img className="rune" alt="rune" src={`https://s3-ap-southeast-1.amazonaws.com/lnw-static/runes/${rune}.png`} />
+            <div key={`runeCol${k}`} className="runeCol">
+              <img className="rune" alt="rune" src={`${staticAddress}/runes/${rune}.png`} />
               <div className="runeName">{`${runeName} x ${runeNumber}`}</div>
               <div className="runeMeta"> {totalRuneEffects} </div>
             </div>
@@ -212,7 +249,7 @@ class GuidePost extends Component {
         });
 
         runeBuilds.push(
-          <div key={i} className="runeBuild">
+          <div key={`runeBuild${i}`} className="runeBuild">
             <div className="runeBuildName">
               { name }
             </div>
@@ -299,8 +336,8 @@ class GuidePost extends Component {
         <section>
           <header className="sectionTitle">Spells</header>
           <div className="guideSpells">
-            <img className="guideSpell" alt="spell1" src={`${Spells[mockHeroGuide.spell[0]]}`} />
-            <img className="guideSpell" alt="spell2" src={`${Spells[mockHeroGuide.spell[1]]}`} />
+            <img className="guideSpell" alt="spell1" src={`${staticAddress}/spells/${mockHeroGuide.spell[0]}.png`} />
+            <img className="guideSpell" alt="spell2" src={`${staticAddress}/spells/${mockHeroGuide.spell[1]}.png`} />
           </div>
         </section>
         <section>
@@ -314,6 +351,23 @@ class GuidePost extends Component {
         <section>
           <header className="sectionTitle">Runes</header>
           { RuneTree(mockHeroGuide.runeBuilds) }
+        </section>
+        <section>
+          <header className="sectionTitle">Description</header>
+          <div className="guideDescription">
+          { mockHeroGuide.description }
+          </div>
+        </section>
+        <section>
+          <div className="guideLike">
+            Like
+          </div>
+        </section>
+        <section>
+          <header className="sectionTitle">Comments</header>
+          <div className="guideComments">
+            { commentsTree(mockHeroGuide.comments) }
+          </div>
         </section>
       </div>
     );

@@ -1,458 +1,401 @@
-[
- {
-   "id": 101,
-   "name": "Spear of Longinus",
-   "description": "+80 พลังโจมตี, + 15%\nลดคูลดาวน์, +150 เกราะ\nสกิลติดตัว – Shatter: การโจมตีเป้าหมายลดเกราะ 50 ลงสูงสุด 5 ครั้ง 5 วินาที",
-   "required": "Astral Spear, Platinum Gauntlets",
-   "price": 2060,
-   "type": "attack"
- },
- {
-   "id": 102,
-   "name": "Fafnir’s Talon",
-   "description": "+60 พลังโจมตี +30% ความเร็วโจมตี\n+10% ดูดเลือด\nสกิลติดตัว – Dragon’s Breath: เพิ่มพลังโจมตีเท่ากับ 8% ของพลังชีวิตศัตรูเมื่อโจมตีธรรมดา",
-   "required": "Shuriken, Bloodied Blub,  Chain Hammer",
-   "price": 2040,
-   "type": "attack"
- },
- {
-   "id": 103,
-   "name": "Claves Sancti",
-   "description": "+90 พลังโจมตี\nสกิลติดตัว – Gift of the Swift: ความเร็วเคลื่อนที่เพิ่มขึ้น (3-45) เป็นเวลา 1.5 วิ (มีผลเฉพาะฮีโร่ระยะไกล)\nสกิลติดตัว: ความแรงคริเพิ่มขึ้น 50 %",
-   "required": "Cleaving Claymore, Gloves(2)",
-   "price": 2250,
-   "type": "attack"
- },
- {
-   "id": 104,
-   "name": "Muramasa",
-   "description": "+75 พลังโจมตี,\n+10% ลดคูลดาวน์\nสกิลติดตัว : เจาะเกราะ+45%",
-   "required": "Astral Spear, Short Sword, Magic Ring",
-   "price": 2020,
-   "type": "attack"
- },
- {
-   "id": 105,
-   "name": "The Beast",
-   "description": "+100 พลังโจมตี,\n+25% ดูดเลือด",
-   "required": "Cleaving Claymore, Bloodied Club",
-   "price": 1740,
-   "type": "attack"
- },
- {
-   "id": 106,
-   "name": "Omni Arms",
-   "description": "+70 พลังโจมตี, +15% ความเร็วการโจมตี, +10% ดุดเลือด, +10% ลดคูลดาวน์,\n+500 พลังชีวิต\nสกิลติดตัว, Five Forces: หลังฮีโร่ใช้สกิลจะเพิ่มพลังโจมตีให้กับการโจมตีปกติครั้งถัดไป (CD 2 วิ)",
-   "required": "Arcane Hammer, Bloodied Club, Ring of Vitality",
-   "price": 2150,
-   "type": "attack"
- },
- {
-   "id": 107,
-   "name": "Slikk’s Sting",
-   "description": "+35% ความเร็วการโจมตี, +25% อัตราคริติคอล, +7% ความเร็วการเคลื่อนที่\nสกิลติดตัว – Wind Bless: หลังจากติดคริ จะต้านทานสถานะเพิ่มขึ้น 35% เป็นเวลา 2 วิ",
-   "required": "Tempest Blades, Gloves (2)",
-   "price": 2000,
-   "type": "attack"
- },
- {
-   "id": 108,
-   "name": "Fenrir’s Tooth",
-   "description": "+200 พลังโจมตี\nสกิลติดตัว- Fenrir’s Tooth: เมื่อ HP ของเป้าหมายต่ำกว่า 50% จะได้รับความเสียหาย +30%",
-   "required": "Cleaving Claymore(2)",
-   "price": 2950,
-   "type": "attack"
- },
- {
-   "id": 109,
-   "name": "Blitz Blade",
-   "description": "+60 พลังโจมตี, +30% ความเร็วการโจมตี, +10% ดูดเลือด, +5% ความเร็วการเคลื่อนที่\nสกิลติดตัว- Electric Arc: ทุก 8 วิการโจมตีปกติจะปล่อยสายฟ้าสร้างความเสียหายเวท 150(+20% พลังโจมตี) และการโจมตีกายภาพจะลด CD สกิลลง 1 วิ",
-   "required": "Tempest Blades, Bloodied Club, Chain Hammer",
-   "price": 2020,
-   "type": "attack"
- },
- {
-   "id": 110,
-   "name": "Ifrit’s Claw",
-   "description": "+30% ความเร็วโจมตี\n+20 % อัตราคริติคอล\n+5% ความเร็วการเคลื่อนที่\nสกิลติดตัว – Flame’s Wrath : เมื่อโจมตีปกติโดนเป้าหมายจะโจมตีเร็วขึ้น 10% เป็นเวลา 2 วิ(5 ครั้ง)",
-   "required": "Tempest Blades, Gloves",
-   "price": 2070,
-   "type": "attack"
- },
- {
-   "id": 111,
-   "name": "Broken Spears",
-   "description": "+110 พลังโจมตี\nสกิลติดตัว – Wind Walk : ความเร็วการเคลื่อนที่เพิ่ม 10% เมื่อไม่ได้สู้\nสกิลติดตัว – Destroyer : เพิ่มเจาะเกราะ 110-250",
-   "required": "Astral Spear,\nChain Hammer,\nShort Sword",
-   "price": 2020,
-   "type": "attack"
- },
- {
-   "id": 112,
-   "name": "Uriel’s Brand",
-   "description": "+100 พลังโจมตี , +600 พลังชีวิต\nสกิลติดตัว- Savior’s Edge: เมื่อพลังชีวิตลดลงต่ำกว่า 40% ฮีโร่จะได้รับโล่ต้านทานเวทพร้อมเกราะเวท +200",
-   "required": "Ring of Vitality, Cleaving Claymore",
-   "price": 2020,
-   "type": "attack"
- },
- {
-   "id": 113,
-   "name": "Curse of Death",
-   "description": "+100 พลังโจมตี,\n+10% ดูดเลือด\nสกิลติดตัว – Shatter : ลดการฟื้นฟูของเป้าหมายลง 50% เป็นเวลา 1.5 วิ(สูงสุด 3 วิ)",
-   "required": "Cleaving Claymore,\nBloodied Club",
-   "price": 1800,
-   "type": "attack"
- },
- {
-   "id": 114,
-   "name": "Death sickle",
-   "description": "+60 พลังโจมตี,\n+5% ลดคูลดาวน์\nสกิลติดตัว – Divine Intervention : อมตะเมื่อ HP ต่ำ วิ่งเร็วขึ้น 20% เป็นเวลา 1 วิ (ฮีโร่ตีไกล 0.5วิ) CD 90 วิ",
-   "required": "Chain Hammer, Short Sword",
-   "price": 2000,
-   "type": "attack"
- },
- {
-   "id": 115,
-   "name": "Bow of Slaugter",
-   "description": "+90 พลังโจมตี,\n+20% อัตราคริติคอล,\n+10% ดูดเลือด\nสกิลพิเศษ – [Bloodthirst] ดูดเลือดเพิ่มขึ้น 90% เป็นเวลา 3 วินาที (ระยไกลเท่านั้น) CD 60 วิ",
-   "required": "Cleaving Claymore,\nBloodied Club, Gloves",
-   "price": 2300,
-   "type": "attack"
- },
- {
-   "id": 201,
-   "name": "Boomstick",
-   "description": "+240 พลังเวท\nสกิลติดตัว – Echo : เมื่อใช้สกิลสร้างความเสียหายเวท 50(+50% โบนัสเวท) CD 5 วิ",
-   "required": "Enchanted Scroll, Ancient Scriptures",
-   "price": 2000,
-   "type": "magic"
- },
- {
-   "id": 202,
-   "name": "Hecate’s Diadem",
-   "description": "+240 พลังเวท\nสกิลติดตัว – Kich: พลังเวทเพิ่มขึ้น 35%",
-   "required": "Enchanted Scroll (2)",
-   "price": 2300,
-   "type": "magic"
- },
- {
-   "id": 203,
-   "name": "Orb of the Magi",
-   "description": "+140 พลังเวท, +10% ลดคูลดาวน์\nสกิลติดตัว – Bide : ทุก 30 วิรับเวท 12 หน่วย HP สูงสุด 110 หน่วย (สูงสุด 10 ครั้ง)\nสกิลติดตัว 2 : From the Ashes เมื่อฮีโร่เลเวลเพิ่มขึ้นจะฟื้นฟู 20% ของพลงชีวิตนาน 3 วินาที",
-   "required": "Phoenix Tear, Magic Ring, Spell Tome",
-   "price": 2010,
-   "type": "magic"
- },
- {
-   "id": 204,
-   "name": "Rhea’s Blessing",
-   "description": "+140 พลังเวท, +10% ลดคูลดาวน์\nสกิลติดตัว – Mana Shield : เมื่อ HP ต่ำกว่า 40% จะสร้างโล่ 500-1200(+40% โบนัสพลังเวท)\nสกิลติดตัว :  เวทแวมไพร์ +25%",
-   "required": "Vlad’s Impaler, Spell Tomb, Magic Ring",
-   "price": 2220,
-   "type": "magic"
- },
- {
-   "id": 205,
-   "name": "Zweihander",
-   "description": "+180 พลังเวท, +400 มานาสูงสุด, +8% ความเร็วการเคลื่อนที่\nสกิลติดตัว – Sudden Strike: เมื่อโจมตีปกติจะ+ตีเร็ว 50% เป็นเวลา 4 วิ\nสกิลติดตัว : Scorching : การโจมตีปกติสร้างความเสียหายเวทเพิ่ม 20%",
-   "required": "Spell Tome, Enchanted Scroll, Lapis Ring",
-   "price": 1970,
-   "type": "magic"
- },
- {
-   "id": 206,
-   "name": "Frosty’s Revenge",
-   "description": "+140 พลังเวท, +220 ต้านทานเวท, +7% ความเร็วเคลื่อนที่\nสกิลติดตัว- Frost : สกิลฮีโร่ที่สร้างความเสียหายจะลดความเร็วเคลื่อนที่ของเป้าหมาย 20% เป็นเวลา 2 วินาที",
-   "required": "Enchanted Scroll,Gladiator’s Gauntlets (2)",
-   "price": 1780,
-   "type": "magic"
- },
- {
-   "id": 207,
-   "name": "Berith’s Agony",
-   "description": "+140 พลังเวท, +10% ลดคูลดาวน์, +270 เกราะ\nสกิลติดตัว – Incantation สร้างความเสียหายเวท 4% ของ HP ปัจจุบันของเป้าหมาย CD 1.2 วิ(ความเสียหายสูงสุดกับมอนสเตอร์ป่า: 80)",
-   "required": "Enchanted Scroll, Platinum Gauntlets, Light Armor",
-   "price": 2160,
-   "type": "magic"
- },
- {
-   "id": 208,
-   "name": "Apocalypse",
-   "description": "+200 พลังเวท +10% ลดคูลดาวน์\nสกิลติดตัว – Elemental Edge : เมื่อใช้สกิล การโจมตีถัดไปจะเพิ่มพลังเวท 30% ของพลังโจมตีกายภาพ(+80% โบนัสพลังเวท)",
-   "required": "Enchanted Scroll, Trick Blade",
-   "price": 2190,
-   "type": "magic"
- },
- {
-   "id": 209,
-   "name": "Soaring Aura",
-   "description": "+140 พลังเวท, +1050 พลังชีวิต\nสกิลติดตัว : Enchanment: ลดเกราะเวทศัตรูในระยะลง 80-150 หน่วย(เพิ่มตามเลเวลฮีโร่)",
-   "required": "Enchanted Scroll, Greaves of Protection",
-   "price": 2100,
-   "type": "magic"
- },
- {
-   "id": 210,
-   "name": "Holy of Holies",
-   "description": "+400 พลังเวท\nสกิลติดตัว Enlightenment : เพิ่มพลังชีวิตสูงสุด 1400",
-   "required": "Enchanted Scroll(2)",
-   "price": 2990,
-   "type": "magic"
- },
- {
-   "id": 211,
-   "name": "Arctic Orb",
-   "description": "+200 พลังเวท\nสกิลพิเศษ – [Solidify] เป็นอมตะ 1.5 วิ ระหว่างนั้นจะไม่สามารถเคลื่อนที่, โจมตี หรือใช้สกิลได้ (คูลดาวน์ 90 วิ)",
-   "required": "Enchanted Scroll, Spell Tomb (2)",
-   "price": 2000,
-   "type": "magic"
- },
- {
-   "id": 212,
-   "name": "Staff of Nuul",
-   "description": "+180 พลังเวท, +10% ลดคูลดาวน์\nสกิลติดตัว: เจาะเกราะเวท +40%",
-   "required": "Spooky Mask, Magic Ring, Spell Tomb",
-   "price": 2050,
-   "type": "magic"
- },
- {
-   "id": 213,
-   "name": "Virtue’s Necklace",
-   "description": "+140 พลังเวท, +20% ลดคูลดาวน์, +300 มานาสูงสุด, +30 ฟื้นฟูมานา/5 วิ\nสกิลติดตัว- Virtue : หลังจากสังหารหรือช่วยเหลือจะฟื้นฟูมานา 20%",
-   "required": "Virtue’s Bracelet, Spell Tome, Magic Ring",
-   "price": 1980,
-   "type": "magic"
- },
- {
-   "id": 214,
-   "name": "Soul Scroll",
-   "description": "+240 พลังเวท, +500 พลังชีวิต\nสกิลติดตัว – Cage : ลดอัตราการฟื้นฟูของเป้าหมาย 50% เป็นเวลา 1.5 วิ (การโจมตีปกติจะเพิ่มระยะเวลา 3 วิ)",
-   "required": "Enchanted Scroll, Ancient Scriptures, Magic Ring",
-   "price": 2050,
-   "type": "magic"
- },
- {
-   "id": 301,
-   "name": "Mantle of Ra",
-   "description": "+80 พลังโจมตี, +330 เกราะ\nสกิลติดตัว – Incantation สร้างความเสียหายเวท 100 แก่ศัตรูรอบๆ ทุก 1 วินาที ( เพิ่ม 4 หน่วยต่อ Lv)",
-   "required": "Cleaving Claymore, Heart of Incubus",
-   "price": 1950,
-   "type": "defense"
- },
- {
-   "id": 302,
-   "name": "Shield of the Lost",
-   "description": "+360 เกราะ, +1200 พลังชีวิต สกิลติดตัว- Strengthened Sentinel : ลดความเร็วโจมตีของศัตรูรอบข้างลง 30%",
-   "required": "Greaves of Protection, Knight’s Plate",
-   "price": 2100,
-   "type": "defense"
- },
- {
-   "id": 303,
-   "name": "The Aegis",
-   "description": "+20% ลดคูลดาวน์, +400 มานาสูงสุด, +360 เกราะ\nสกิลติดตัว-Sentinel ลดความเร็วโจมตีของผู้ทำการโจมตี 30% และความเร็วเคลื่อนที่ 15% เป็นเวลา 3 วิ",
-   "required": "Platinum Gautlets, Knight’s Plate, Lapis Ring",
-   "price": 2180,
-   "type": "defense"
- },
- {
-   "id": 304,
-   "name": "Gaia’s Standard",
-   "description": "+240 ต้านทานเวท, +1200 พลังชีวิต, +5% ความเร็วการเคลื่อนที่\nสกิลติดตัว – Recover : เมื่อโดนโจมตีจะฟื้นฟู HP 8% ใน 2 วิ (CD 10 วิ)",
-   "required": "Belt of Clarity,Ring of Vitality, Talisman of Strength",
-   "price": 1960,
-   "type": "defense"
- },
- {
-   "id": 305,
-   "name": "Medallion of troy",
-   "description": "+10% ลดคูลดาวน์, +360 ต้านทานเวท, +1000 พลังชีวิต\nสกิลติดตัว – Fairy : ได้รับโล่เวท 350-1050 ทุกๆ 15 วินาที (เพิ่มขึ้นตาม Lv)",
-   "required": "Belt of Clarity, Ring of Vitality, Gladitor’s Gauntlets",
-   "price": 2320,
-   "type": "defense"
- },
- {
-   "id": 306,
-   "name": "Crimson Banner",
-   "description": "+200 เกราะ, +1500 พลังชีวิต\nสกิลติดตัว – Bloody Battle : เมื่อฆ่าหรือช่วยเหลือจะฟื้นฟู HP 20% ใน 5 วิ CD 10 วินาที",
-   "required": "Greaves of Protection, Light Armor(2)",
-   "price": 2090,
-   "type": "defense"
- },
- {
-   "id": 307,
-   "name": "Hyoga’s Edge",
-   "description": "+100 เกราะ, +100 ต้านทานเวท, +1200 พลังชีวิต\nสกิลติดตัว : Biting Cold : การโจมตีปกติจะลดความเร็วเคลื่อนที่ของศัตรู 25% และเพิ่มให้ตัวเอง 10% เป็นเวลา 2 วิ",
-   "required": "Greaves of Protection, Light Armor, Gladiator’s Gauntlets",
-   "price": 1920,
-   "type": "defense"
- },
- {
-   "id": 308,
-   "name": "Blade of Eternity",
-   "description": "+120 เกราะ \nสกิลติดตัว Warfare – เพิ่มดาเมจ 10%\nสกิลติดตัว Resurrect – หลังจากฮีโร่ตายลง 2 วินาที จะถูกทำให้ฟื้นคืนชีพขึ้นมา และได้รับพลังชีวิต 2,000 + (เลเวลของฮีโร่ x 100) หน่วย สกิลนี้มีคูลดาวน์ 150 วินาที และสามารถใช้ชุบชีวิตได้เพียงแค่ 2 ครั้ง ต่อ 1 เกมการเล่นเท่านั้น",
-   "required": "",
-   "price": 2240,
-   "type": "defense"
- },
- {
-   "id": 309,
-   "name": "Frost Cape",
-   "description": "+10% ลดคูลดาวน์, +250 เกราะ, +800 พลังชีวิต\nสกิลติดตัว- Frost Power: เมื่อใช้สกิลการโจมตีปกติครั้งต่อไปจะลดความเร็วเลื่อนที่ 30% และสร้างความเสียหายกายภาพ 150 เป็นวงกว้าง(เพิ่มขึ้น 20 ทุกครั้งที่ Lv อัพ)  Cd 3 วิ",
-   "required": "Platinum Gauntlets, Ring of Vitality (2)",
-   "price": 2000,
-   "type": "defense"
- },
- {
-   "id": 310,
-   "name": "Amulet of Longevity",
-   "description": "+1700 พลังชีวิต, +100 ฟื้นฟูพลังชีวิต/5 วิ\nสกิลติดตัว – I’m Golden ประสิทธิภาพการฟื้นฟู +20%\nสกิลติดตัว – Longevity : เพิ่มพลังชีวิตสูงสุด 10%",
-   "required": "Greaves of Protection, Ring of Vitality (2)",
-   "price": 2680,
-   "type": "defense"
- },
- {
-   "id": 311,
-   "name": "Rock Shield",
-   "description": "+150 เกราะ, +150 ต้านทานเวท, +800 พลังชีวิต\nPain Absorb : หากโดนโจมตีใน 3 วิ จะสร้างโล่ (ความเสียหายที่ได้รับ x30% + HP สูงสุด x 10%) เป็นเวลา 5 วิ และลดพลังโจมตีตัวเองลง 70% เป็นเวลา 3 วิ (คูลดาวน์ 75 วิ)",
-   "required": "Necklace of Vitality, Light Armor, Gladiator’s Gauntlest",
-   "price": 1980,
-   "type": "defense"
- },
- {
-   "id": 312,
-   "name": "Mail of Pain",
-   "description": "+300 เกราะ, +1200 พลังชีวิต\nสกิลติดตัว – Back Stab : เมื่อโดนโจมตีกายภาพจะสะท้อนเวท 15% ของความเสียหายกลับไป",
-   "required": "Light Armor(2), Greaves of Protection",
-   "price": 1940,
-   "type": "defense"
- },
- {
-   "id": 313,
-   "name": "Hercules’s Madness",
-   "description": "+50 พลังโจมตี, +180 เกราะ, +150 ต้านทานเวท\nสกิลติดตัว – Berserk : เมื่อ HP ต่ำกว่า 40% จะเพิ่มพลังโจมตี 40 และได้รับโล่เวท 8 วิ CD 90 วินาที",
-   "required": "Light Armor, Gladiator’s Gauntlets, Chain Hammer",
-   "price": 2000,
-   "type": "defense"
- },
- {
-   "id": 314,
-   "name": "Odin’s Will",
-   "description": "+60 พลังโจมตี, +1000 พลังชีวิต\nสกิลติดตัว- Loyalty เมื่อโดนโจมตี จะเพิ่มความเร็วเคลื่อนที่และโจมตีแรงขั้น 2% (สูงสุด 5 ครั้ง)",
-   "required": "Necklace of Vitality, Short Sword(2)",
-   "price": 1820,
-   "type": "defense"
- },
- {
-   "id": 401,
-   "name": "Sonic Boots",
-   "description": "+110 เกราะ\nสกิลติดตัว : ความเร็วการเคลื่อนที่ +60\nสกิลติดตัว : ลดความเสียหายที่ได้รับจากการโจมตีปกติ 15%",
-   "required": "Boots of Speed",
-   "price": 700,
-   "type": "movement"
- },
- {
-   "id": 402,
-   "name": "Gilded Greaves",
-   "description": "+110 ต้านทานเวท\nสกิลติดตัว : ความเร็วการเคลื่อนที่ +60\nสกิลติดตัว : ป้องกันสถานะ 35%",
-   "required": "Boots of Speed",
-   "price": 690,
-   "type": "movement"
- },
- {
-   "id": 403,
-   "name": "Flashy Boots",
-   "description": "+10% ลดคูลดาวน\nสกิลติดตัว : ความเร็วเคลื่อนที่ +60",
-   "required": "Boots of Speed",
-   "price": 760,
-   "type": "movement"
- },
- {
-   "id": 404,
-   "name": "Enchanted Kicks",
-   "description": "สกิลติดตัว : ความเร็วเคลื่อนที่ +60\nสกิลติดตัว : เจาะเกราะเวท +75",
-   "required": "Boots of Speed",
-   "price": 790,
-   "type": "movement"
- },
- {
-   "id": 405,
-   "name": "War Boots",
-   "description": "+25% ความเร็วโจมตี\nสกิลติดตัว : ความเร็วเลื่อนที่ +60",
-   "required": "Boots of Speed",
-   "price": 660,
-   "type": "movement"
- },
- {
-   "id": 406,
-   "name": "Hermes’s Select",
-   "description": "สกิลติดตัว – Swift: เมื่อออกจากการต่อสู้จะได้รับความเร็วการเคลื่อนที่เพิ่มขึ้น 60 หน่วย\nสกิลติดตัว – ความเร็วเคลื่อนที่ +60",
-   "required": "Boots of Speed",
-   "price": 580,
-   "type": "movement"
- },
- {
-   "id": 501,
-   "name": "Loki’s Curse",
-   "description": "+150 พลังเวท +400 พลังชีวิต\nAcquire Frostbite สกิลติดตัว – Curse Power: เมื่อใช้สกิลโจมตีปกติครั้งต่อไปจะเพิ่มความเสียหายกายภาพ 35%(+45% โบนัสพลังเวท) ของพลังเวท\nสกิลติดตัว – โจมตีมอนสเตอร์ป่าแรงขึ้น 30% และได้รับ XP เมื่อฆ่ามอนสเตอร์ป่าเพิ่ม 35%\nสกิลติดตัว 3 – Seek and Destroy: การสังหารมอนสเตอร์ป่าจะทำให้ฮีโร่ได้รับพลังเวท +8 และมานาสูงสุด 30 หน่วย (ซ้อนทับสูงสุด 15 ครั้ง)",
-   "required": "Monster’s Bane, Ancient Scriptures, Ring of Vitality",
-   "price": 1750,
-   "type": "jungle"
- },
- {
-   "id": 502,
-   "name": "Leviathan",
-   "description": "+120 เกราะ\n+800 พลังชีวิต\nAcquire Frostbite\nสกิลติดตัว – Incantation: สร้างความเสียหายเวท 90 แก่ศัตรูรอบๆ ทุก 1 วิ (เพิ่ม 5 ต่อ Lv)\nสกิลติดตัว – Hunting: เพิ่มความเสียหายต่อมอนสเตอร์ป่า +30% และได้รับ XP เมื่อสังหารมอนสเตอร์ป่า +35%\nสกิลติดตัว – Stalk: การสังหารมอนสเตอร์ป่าจะทำให้ฮีโร่ได้รับ HP +70 (ซ้อนทับสูงสุด 15 ครั้ง)",
-   "required": "Gnoll Cleaver, Light Armor, Necklace of Vitality",
-   "price": 1750,
-   "type": "jungle"
- },
- {
-   "id": 503,
-   "name": "Soulreaver",
-   "description": "+80 พลังโจมตี, +10% ดูดเลือด\nAcquire Frostbite\nสกิลติดตัว: ลดคูลดาวน์ 15%\nสกิลติดตัว – Hunting: เพิ่มความเสียหายต่อมอนสเตอร์ป่า +30% และได้รับ XP เมื่อสังหารมอนสเตอร์ป่า +35%\nสกิลติดตัว – Stalk: การสังหารมอนสเตอร์ป่าจะทำให้ฮีโร่ได้รับพลังโจมตี +3 (ซ้อนทับสูงสุด 15 ครั้ง)",
-   "required": "Mr. Stabby, Chain Hammer, Magic Ring",
-   "price": 1750,
-   "type": "jungle"
- },
- {
-   "id": 504,
-   "name": "Firestorm Bow",
-   "description": "+15 พลังโจมตี\n+20% ความเร็วโจมตี\n+10% ดูดเลือด\nAcquire Frostbite\nสกิลติดตัว – Firestorm: การโจมตีปกติจะทำให้เป้าหมายติดขั้นสัญลักษณ์ โดยแต่ละขั้นจะสร้างความเสียหายวทเพิ่ม (18+ Lv ฮีโร่x0.5) หน่วย (ระยะไกลจะสร้างเพียง 75%) สูงสุด 6 ขั้น\nสกิลติดตัว – Hunting: โจมตีมอนสเตอร์ป่าแรงขึ้น 30% และได้รับ XP เมื่อฆ่ามอนสเตอร์ป่าเพิ่ม 35%\nสกิลติดตัว – Stalk: การฆ่ามอนสเตอร์ป่าจะได้รับความเจ็วโจมตี +2% (สูงสุด 15 ครั้ง)",
-   "required": "Stormy Bow, Dagger, Bloodied Club",
-   "price": 1750,
-   "type": "jungle"
- },
- {
-   "id": 601,
-   "name": "Soul Storm Badge",
-   "description": "+15 ฟื้นฟูมานา / 5วินาที\n+250เกราะ\n+500พลังชีวิต\n+40ฟื้นฟูพลังชีวิต\n+5% ความเร็วเคลื่อนที่\nสกิลติดตัว –Bounty : หากสถานะการเงิน และ XP ของตัวเองต่ำที่สุดในทีมจะได้รับ 5โกลด์ และXP ทุก3 วินาที (100ต่อนาที)\nสกิลติดตัว –Exploit : หลังสังหารหรือช่วยเหลือจะได้รับโบนัสโกลด์ และ XP  เพิ่มขึ้น30%\nสกิลพิเศษ –Force Shield : สร้างโล่ดูดเลือดรับความเสียหาย (800 +LV ฮีโร่ x80) แก่ฮีโร่พันธมิตรที่มี HPน้อยที่สุด พร้อมเพิ่มความเร็วเคลื่อนที่ 30% เป็นเวลา 3วินาที (คูลดาวน์ 45วินาที)",
-   "required": "",
-   "price": 1850,
-   "type": "support"
- },
- {
-   "id": 602,
-   "name": "Ring of Terror",
-   "description": "+90 พลังเวท\n+15% ลดคูลดาวน์\n+30 ฟื้นฟูมานา / 5 วินาที\n+5% ความเร็วเคลื่อนที่\nสกิลติดตัว –Bounty : หากสถานะการเงิน และ XP ของตัวเองต่ำที่สุดในทีมจะได้รับ 5โกลด์ และXP ทุก3 วินาที (100ต่อนาที)\nสกิลติดตัว –Exploit : หลังสังหารหรือช่วยเหลือจะได้รับโบนัสโกลด์ และ XP  เพิ่มขึ้น30%\nสกิลพิเศษ – Eye of the Fiend : ระบุตำแหน่งศัตรูที่ใกล้ที่สุด เป็นเวลา 4วินาที (คูลดาวน์ 45วินาที)",
-   "required": "",
-   "price": 1850,
-   "type": "support"
- },
- {
-   "id": 603,
-   "name": "Poseidon Emblem",
-   "description": "+20 ฟื้นฟูมานา\n+200 เกราะ\n+600 พลังชีวิต\nสกิลติดตัว – Aura : ปล่อยออร่าที่จะเพิ่มอัตราฟื้นฟู HP+20  และมานา+10 ให้ตัวเองและพันธมิตรใกล้ๆ (เพิ่มขึ้นตาม LV)\nสกิลติดตัว –Devotion : ทุก 30วินาที จะสะสมบัฟ 1ครั้ง(สูงสุด2ครั้ง) จากนั้นเมื่อครีปตายอยู่ใกล้ๆ จะหักบัฟที่สะสมไว้ 1ครั้ง และทำให้พันธมิตรที่ใกล้ที่สุดได้รับ 15โกลด์ และ 40XP\nสกิลติดตัว –Poseidon : เพิ่มอัตราการสร้างความเสียหาย 5% และการต้านทานความเสียหาย 10% แก่พันธมิตรรอบๆ",
-   "required": "",
-   "price": 1850,
-   "type": "support"
- },
- {
-   "id": 604,
-   "name": "Bracer of Purification",
-   "description": "+15% ลดคูลดาวน์\n+20 ฟื้นฟูมานา / 5วินาที\n+500 พลังชีวิต\nสกิลติดตัว – Aura : ปล่อยออร่าที่จะเพิ่มอัตราฟื้นฟู HP+20  และมานา+10 ให้ตัวเองและพันธมิตรใกล้ๆ (เพิ่มขึ้นตาม LV)\nสกิลติดตัว –Devotion : ทุก 30วินาที จะสะสมบัฟ 1ครั้ง(สูงสุด2ครั้ง) จากนั้นเมื่อครีปตายอยู่ใกล้ๆ จะหักบัฟที่สะสมไว้ 1ครั้ง และทำให้พันธมิตรที่ใกล้ที่สุดได้รับ 15โกลด์ และ 40XP\nสกิลพิเศษ – Purification Curse : ลบสถานะออกจากพันธมิตรในระยะพร้อมกบฟื้นฟู HP (160+LVx30)หน่วย และเพิ่มความเร็วเคลื่อนที่ขึ้น 20% เป็นเวลา 1วินาที จากนั้นพันธมิตรดังกล่าวจะวิ่งช้าลง 2วินาที (คูลดาวน์ 90วินาที)",
-   "required": "",
-   "price": 1850,
-   "type": "support"
- }
-]
+{
+   "101": {
+      "name": "Spear of Longinus",
+      "description": "+80 พลังโจมตี, + 15%\nลดคูลดาวน์, +150 เกราะ\nสกิลติดตัว – Shatter: การโจมตีเป้าหมายลดเกราะ 50 ลงสูงสุด 5 ครั้ง 5 วินาที",
+      "required": "Astral Spear, Platinum Gauntlets",
+      "price": 2060,
+      "type": "attack"
+   },
+   "102": {
+      "name": "Fafnir’s Talon",
+      "description": "+60 พลังโจมตี +30% ความเร็วโจมตี\n+10% ดูดเลือด\nสกิลติดตัว – Dragon’s Breath: เพิ่มพลังโจมตีเท่ากับ 8% ของพลังชีวิตศัตรูเมื่อโจมตีธรรมดา",
+      "required": "Shuriken, Bloodied Blub,  Chain Hammer",
+      "price": 2040,
+      "type": "attack"
+   },
+   "103": {
+      "name": "Claves Sancti",
+      "description": "+90 พลังโจมตี\nสกิลติดตัว – Gift of the Swift: ความเร็วเคลื่อนที่เพิ่มขึ้น (3-45) เป็นเวลา 1.5 วิ (มีผลเฉพาะฮีโร่ระยะไกล)\nสกิลติดตัว: ความแรงคริเพิ่มขึ้น 50 %",
+      "required": "Cleaving Claymore, Gloves(2)",
+      "price": 2250,
+      "type": "attack"
+   },
+   "104": {
+      "name": "Muramasa",
+      "description": "+75 พลังโจมตี,\n+10% ลดคูลดาวน์\nสกิลติดตัว : เจาะเกราะ+45%",
+      "required": "Astral Spear, Short Sword, Magic Ring",
+      "price": 2020,
+      "type": "attack"
+   },
+   "105": {
+      "name": "The Beast",
+      "description": "+100 พลังโจมตี,\n+25% ดูดเลือด",
+      "required": "Cleaving Claymore, Bloodied Club",
+      "price": 1740,
+      "type": "attack"
+   },
+   "106": {
+      "name": "Omni Arms",
+      "description": "+70 พลังโจมตี, +15% ความเร็วการโจมตี, +10% ดุดเลือด, +10% ลดคูลดาวน์,\n+500 พลังชีวิต\nสกิลติดตัว, Five Forces: หลังฮีโร่ใช้สกิลจะเพิ่มพลังโจมตีให้กับการโจมตีปกติครั้งถัดไป (CD 2 วิ)",
+      "required": "Arcane Hammer, Bloodied Club, Ring of Vitality",
+      "price": 2150,
+      "type": "attack"
+   },
+   "107": {
+      "name": "Slikk’s Sting",
+      "description": "+35% ความเร็วการโจมตี, +25% อัตราคริติคอล, +7% ความเร็วการเคลื่อนที่\nสกิลติดตัว – Wind Bless: หลังจากติดคริ จะต้านทานสถานะเพิ่มขึ้น 35% เป็นเวลา 2 วิ",
+      "required": "Tempest Blades, Gloves (2)",
+      "price": 2000,
+      "type": "attack"
+   },
+   "108": {
+      "name": "Fenrir’s Tooth",
+      "description": "+200 พลังโจมตี\nสกิลติดตัว- Fenrir’s Tooth: เมื่อ HP ของเป้าหมายต่ำกว่า 50% จะได้รับความเสียหาย +30%",
+      "required": "Cleaving Claymore(2)",
+      "price": 2950,
+      "type": "attack"
+   },
+   "109": {
+      "name": "Blitz Blade",
+      "description": "+60 พลังโจมตี, +30% ความเร็วการโจมตี, +10% ดูดเลือด, +5% ความเร็วการเคลื่อนที่\nสกิลติดตัว- Electric Arc: ทุก 8 วิการโจมตีปกติจะปล่อยสายฟ้าสร้างความเสียหายเวท 150(+20% พลังโจมตี) และการโจมตีกายภาพจะลด CD สกิลลง 1 วิ",
+      "required": "Tempest Blades, Bloodied Club, Chain Hammer",
+      "price": 2020,
+      "type": "attack"
+   },
+   "110": {
+      "name": "Ifrit’s Claw",
+      "description": "+30% ความเร็วโจมตี\n+20 % อัตราคริติคอล\n+5% ความเร็วการเคลื่อนที่\nสกิลติดตัว – Flame’s Wrath : เมื่อโจมตีปกติโดนเป้าหมายจะโจมตีเร็วขึ้น 10% เป็นเวลา 2 วิ(5 ครั้ง)",
+      "required": "Tempest Blades, Gloves",
+      "price": 2070,
+      "type": "attack"
+   },
+   "111": {
+      "name": "Broken Spears",
+      "description": "+110 พลังโจมตี\nสกิลติดตัว – Wind Walk : ความเร็วการเคลื่อนที่เพิ่ม 10% เมื่อไม่ได้สู้\nสกิลติดตัว – Destroyer : เพิ่มเจาะเกราะ 110-250",
+      "required": "Astral Spear,\nChain Hammer,\nShort Sword",
+      "price": 2020,
+      "type": "attack"
+   },
+   "112": {
+      "name": "Uriel’s Brand",
+      "description": "+100 พลังโจมตี , +600 พลังชีวิต\nสกิลติดตัว- Savior’s Edge: เมื่อพลังชีวิตลดลงต่ำกว่า 40% ฮีโร่จะได้รับโล่ต้านทานเวทพร้อมเกราะเวท +200",
+      "required": "Ring of Vitality, Cleaving Claymore",
+      "price": 2020,
+      "type": "attack"
+   },
+   "113": {
+      "name": "Curse of Death",
+      "description": "+100 พลังโจมตี,\n+10% ดูดเลือด\nสกิลติดตัว – Shatter : ลดการฟื้นฟูของเป้าหมายลง 50% เป็นเวลา 1.5 วิ(สูงสุด 3 วิ)",
+      "required": "Cleaving Claymore,\nBloodied Club",
+      "price": 1800,
+      "type": "attack"
+   },
+   "114": {
+      "name": "Death sickle",
+      "description": "+60 พลังโจมตี,\n+5% ลดคูลดาวน์\nสกิลติดตัว – Divine Intervention : อมตะเมื่อ HP ต่ำ วิ่งเร็วขึ้น 20% เป็นเวลา 1 วิ (ฮีโร่ตีไกล 0.5วิ) CD 90 วิ",
+      "required": "Chain Hammer, Short Sword",
+      "price": 2000,
+      "type": "attack"
+   },
+   "115": {
+      "name": "Bow of Slaugter",
+      "description": "+90 พลังโจมตี,\n+20% อัตราคริติคอล,\n+10% ดูดเลือด\nสกิลพิเศษ – [Bloodthirst] ดูดเลือดเพิ่มขึ้น 90% เป็นเวลา 3 วินาที (ระยไกลเท่านั้น) CD 60 วิ",
+      "required": "Cleaving Claymore,\nBloodied Club, Gloves",
+      "price": 2300,
+      "type": "attack"
+   },
+   "201": {
+      "name": "Boomstick",
+      "description": "+240 พลังเวท\nสกิลติดตัว – Echo : เมื่อใช้สกิลสร้างความเสียหายเวท 50(+50% โบนัสเวท) CD 5 วิ",
+      "required": "Enchanted Scroll, Ancient Scriptures",
+      "price": 2000,
+      "type": "magic"
+   },
+   "202": {
+      "name": "Hecate’s Diadem",
+      "description": "+240 พลังเวท\nสกิลติดตัว – Kich: พลังเวทเพิ่มขึ้น 35%",
+      "required": "Enchanted Scroll (2)",
+      "price": 2300,
+      "type": "magic"
+   },
+   "203": {
+      "name": "Orb of the Magi",
+      "description": "+140 พลังเวท, +10% ลดคูลดาวน์\nสกิลติดตัว – Bide : ทุก 30 วิรับเวท 12 หน่วย HP สูงสุด 110 หน่วย (สูงสุด 10 ครั้ง)\nสกิลติดตัว 2 : From the Ashes เมื่อฮีโร่เลเวลเพิ่มขึ้นจะฟื้นฟู 20% ของพลงชีวิตนาน 3 วินาที",
+      "required": "Phoenix Tear, Magic Ring, Spell Tome",
+      "price": 2010,
+      "type": "magic"
+   },
+   "204": {
+      "name": "Rhea’s Blessing",
+      "description": "+140 พลังเวท, +10% ลดคูลดาวน์\nสกิลติดตัว – Mana Shield : เมื่อ HP ต่ำกว่า 40% จะสร้างโล่ 500-1200(+40% โบนัสพลังเวท)\nสกิลติดตัว :  เวทแวมไพร์ +25%",
+      "required": "Vlad’s Impaler, Spell Tomb, Magic Ring",
+      "price": 2220,
+      "type": "magic"
+   },
+   "205": {
+      "name": "Zweihander",
+      "description": "+180 พลังเวท, +400 มานาสูงสุด, +8% ความเร็วการเคลื่อนที่\nสกิลติดตัว – Sudden Strike: เมื่อโจมตีปกติจะ+ตีเร็ว 50% เป็นเวลา 4 วิ\nสกิลติดตัว : Scorching : การโจมตีปกติสร้างความเสียหายเวทเพิ่ม 20%",
+      "required": "Spell Tome, Enchanted Scroll, Lapis Ring",
+      "price": 1970,
+      "type": "magic"
+   },
+   "206": {
+      "name": "Frosty’s Revenge",
+      "description": "+140 พลังเวท, +220 ต้านทานเวท, +7% ความเร็วเคลื่อนที่\nสกิลติดตัว- Frost : สกิลฮีโร่ที่สร้างความเสียหายจะลดความเร็วเคลื่อนที่ของเป้าหมาย 20% เป็นเวลา 2 วินาที",
+      "required": "Enchanted Scroll,Gladiator’s Gauntlets (2)",
+      "price": 1780,
+      "type": "magic"
+   },
+   "207": {
+      "name": "Berith’s Agony",
+      "description": "+140 พลังเวท, +10% ลดคูลดาวน์, +270 เกราะ\nสกิลติดตัว – Incantation สร้างความเสียหายเวท 4% ของ HP ปัจจุบันของเป้าหมาย CD 1.2 วิ(ความเสียหายสูงสุดกับมอนสเตอร์ป่า: 80)",
+      "required": "Enchanted Scroll, Platinum Gauntlets, Light Armor",
+      "price": 2160,
+      "type": "magic"
+   },
+   "208": {
+      "name": "Apocalypse",
+      "description": "+200 พลังเวท +10% ลดคูลดาวน์\nสกิลติดตัว – Elemental Edge : เมื่อใช้สกิล การโจมตีถัดไปจะเพิ่มพลังเวท 30% ของพลังโจมตีกายภาพ(+80% โบนัสพลังเวท)",
+      "required": "Enchanted Scroll, Trick Blade",
+      "price": 2190,
+      "type": "magic"
+   },
+   "209": {
+      "name": "Soaring Aura",
+      "description": "+140 พลังเวท, +1050 พลังชีวิต\nสกิลติดตัว : Enchanment: ลดเกราะเวทศัตรูในระยะลง 80-150 หน่วย(เพิ่มตามเลเวลฮีโร่)",
+      "required": "Enchanted Scroll, Greaves of Protection",
+      "price": 2100,
+      "type": "magic"
+   },
+   "210": {
+      "name": "Holy of Holies",
+      "description": "+400 พลังเวท\nสกิลติดตัว Enlightenment : เพิ่มพลังชีวิตสูงสุด 1400",
+      "required": "Enchanted Scroll(2)",
+      "price": 2990,
+      "type": "magic"
+   },
+   "211": {
+      "name": "Arctic Orb",
+      "description": "+200 พลังเวท\nสกิลพิเศษ – [Solidify] เป็นอมตะ 1.5 วิ ระหว่างนั้นจะไม่สามารถเคลื่อนที่, โจมตี หรือใช้สกิลได้ (คูลดาวน์ 90 วิ)",
+      "required": "Enchanted Scroll, Spell Tomb (2)",
+      "price": 2000,
+      "type": "magic"
+   },
+   "212": {
+      "name": "Staff of Nuul",
+      "description": "+180 พลังเวท, +10% ลดคูลดาวน์\nสกิลติดตัว: เจาะเกราะเวท +40%",
+      "required": "Spooky Mask, Magic Ring, Spell Tomb",
+      "price": 2050,
+      "type": "magic"
+   },
+   "213": {
+      "name": "Virtue’s Necklace",
+      "description": "+140 พลังเวท, +20% ลดคูลดาวน์, +300 มานาสูงสุด, +30 ฟื้นฟูมานา/5 วิ\nสกิลติดตัว- Virtue : หลังจากสังหารหรือช่วยเหลือจะฟื้นฟูมานา 20%",
+      "required": "Virtue’s Bracelet, Spell Tome, Magic Ring",
+      "price": 1980,
+      "type": "magic"
+   },
+   "214": {
+      "name": "Soul Scroll",
+      "description": "+240 พลังเวท, +500 พลังชีวิต\nสกิลติดตัว – Cage : ลดอัตราการฟื้นฟูของเป้าหมาย 50% เป็นเวลา 1.5 วิ (การโจมตีปกติจะเพิ่มระยะเวลา 3 วิ)",
+      "required": "Enchanted Scroll, Ancient Scriptures, Magic Ring",
+      "price": 2050,
+      "type": "magic"
+   },
+   "301": {
+      "name": "Mantle of Ra",
+      "description": "+80 พลังโจมตี, +330 เกราะ\nสกิลติดตัว – Incantation สร้างความเสียหายเวท 100 แก่ศัตรูรอบๆ ทุก 1 วินาที ( เพิ่ม 4 หน่วยต่อ Lv)",
+      "required": "Cleaving Claymore, Heart of Incubus",
+      "price": 1950,
+      "type": "defense"
+   },
+   "302": {
+      "name": "Shield of the Lost",
+      "description": "+360 เกราะ, +1200 พลังชีวิต สกิลติดตัว- Strengthened Sentinel : ลดความเร็วโจมตีของศัตรูรอบข้างลง 30%",
+      "required": "Greaves of Protection, Knight’s Plate",
+      "price": 2100,
+      "type": "defense"
+   },
+   "303": {
+      "name": "The Aegis",
+      "description": "+20% ลดคูลดาวน์, +400 มานาสูงสุด, +360 เกราะ\nสกิลติดตัว-Sentinel ลดความเร็วโจมตีของผู้ทำการโจมตี 30% และความเร็วเคลื่อนที่ 15% เป็นเวลา 3 วิ",
+      "required": "Platinum Gautlets, Knight’s Plate, Lapis Ring",
+      "price": 2180,
+      "type": "defense"
+   },
+   "304": {
+      "name": "Gaia’s Standard",
+      "description": "+240 ต้านทานเวท, +1200 พลังชีวิต, +5% ความเร็วการเคลื่อนที่\nสกิลติดตัว – Recover : เมื่อโดนโจมตีจะฟื้นฟู HP 8% ใน 2 วิ (CD 10 วิ)",
+      "required": "Belt of Clarity,Ring of Vitality, Talisman of Strength",
+      "price": 1960,
+      "type": "defense"
+   },
+   "305": {
+      "name": "Medallion of troy",
+      "description": "+10% ลดคูลดาวน์, +360 ต้านทานเวท, +1000 พลังชีวิต\nสกิลติดตัว – Fairy : ได้รับโล่เวท 350-1050 ทุกๆ 15 วินาที (เพิ่มขึ้นตาม Lv)",
+      "required": "Belt of Clarity, Ring of Vitality, Gladitor’s Gauntlets",
+      "price": 2320,
+      "type": "defense"
+   },
+   "306": {
+      "name": "Crimson Banner",
+      "description": "+200 เกราะ, +1500 พลังชีวิต\nสกิลติดตัว – Bloody Battle : เมื่อฆ่าหรือช่วยเหลือจะฟื้นฟู HP 20% ใน 5 วิ CD 10 วินาที",
+      "required": "Greaves of Protection, Light Armor(2)",
+      "price": 2090,
+      "type": "defense"
+   },
+   "307": {
+      "name": "Hyoga’s Edge",
+      "description": "+100 เกราะ, +100 ต้านทานเวท, +1200 พลังชีวิต\nสกิลติดตัว : Biting Cold : การโจมตีปกติจะลดความเร็วเคลื่อนที่ของศัตรู 25% และเพิ่มให้ตัวเอง 10% เป็นเวลา 2 วิ",
+      "required": "Greaves of Protection, Light Armor, Gladiator’s Gauntlets",
+      "price": 1920,
+      "type": "defense"
+   },
+   "308": {
+      "name": "Blade of Eternity",
+      "description": "+120 เกราะ \nสกิลติดตัว Warfare – เพิ่มดาเมจ 10%\nสกิลติดตัว Resurrect – หลังจากฮีโร่ตายลง 2 วินาที จะถูกทำให้ฟื้นคืนชีพขึ้นมา และได้รับพลังชีวิต 2,000 + (เลเวลของฮีโร่ x 100) หน่วย สกิลนี้มีคูลดาวน์ 150 วินาที และสามารถใช้ชุบชีวิตได้เพียงแค่ 2 ครั้ง ต่อ 1 เกมการเล่นเท่านั้น",
+      "required": "",
+      "price": 2240,
+      "type": "defense"
+   },
+   "309": {
+      "name": "Frost Cape",
+      "description": "+10% ลดคูลดาวน์, +250 เกราะ, +800 พลังชีวิต\nสกิลติดตัว- Frost Power: เมื่อใช้สกิลการโจมตีปกติครั้งต่อไปจะลดความเร็วเลื่อนที่ 30% และสร้างความเสียหายกายภาพ 150 เป็นวงกว้าง(เพิ่มขึ้น 20 ทุกครั้งที่ Lv อัพ)  Cd 3 วิ",
+      "required": "Platinum Gauntlets, Ring of Vitality (2)",
+      "price": 2000,
+      "type": "defense"
+   },
+   "310": {
+      "name": "Amulet of Longevity",
+      "description": "+1700 พลังชีวิต, +100 ฟื้นฟูพลังชีวิต/5 วิ\nสกิลติดตัว – I’m Golden ประสิทธิภาพการฟื้นฟู +20%\nสกิลติดตัว – Longevity : เพิ่มพลังชีวิตสูงสุด 10%",
+      "required": "Greaves of Protection, Ring of Vitality (2)",
+      "price": 2680,
+      "type": "defense"
+   },
+   "311": {
+      "name": "Rock Shield",
+      "description": "+150 เกราะ, +150 ต้านทานเวท, +800 พลังชีวิต\nPain Absorb : หากโดนโจมตีใน 3 วิ จะสร้างโล่ (ความเสียหายที่ได้รับ x30% + HP สูงสุด x 10%) เป็นเวลา 5 วิ และลดพลังโจมตีตัวเองลง 70% เป็นเวลา 3 วิ (คูลดาวน์ 75 วิ)",
+      "required": "Necklace of Vitality, Light Armor, Gladiator’s Gauntlest",
+      "price": 1980,
+      "type": "defense"
+   },
+   "312": {
+      "name": "Mail of Pain",
+      "description": "+300 เกราะ, +1200 พลังชีวิต\nสกิลติดตัว – Back Stab : เมื่อโดนโจมตีกายภาพจะสะท้อนเวท 15% ของความเสียหายกลับไป",
+      "required": "Light Armor(2), Greaves of Protection",
+      "price": 1940,
+      "type": "defense"
+   },
+   "313": {
+      "name": "Hercules’s Madness",
+      "description": "+50 พลังโจมตี, +180 เกราะ, +150 ต้านทานเวท\nสกิลติดตัว – Berserk : เมื่อ HP ต่ำกว่า 40% จะเพิ่มพลังโจมตี 40 และได้รับโล่เวท 8 วิ CD 90 วินาที",
+      "required": "Light Armor, Gladiator’s Gauntlets, Chain Hammer",
+      "price": 2000,
+      "type": "defense"
+   },
+   "314": {
+      "name": "Odin’s Will",
+      "description": "+60 พลังโจมตี, +1000 พลังชีวิต\nสกิลติดตัว- Loyalty เมื่อโดนโจมตี จะเพิ่มความเร็วเคลื่อนที่และโจมตีแรงขั้น 2% (สูงสุด 5 ครั้ง)",
+      "required": "Necklace of Vitality, Short Sword(2)",
+      "price": 1820,
+      "type": "defense"
+   },
+   "401": {
+      "name": "Sonic Boots",
+      "description": "+110 เกราะ\nสกิลติดตัว : ความเร็วการเคลื่อนที่ +60\nสกิลติดตัว : ลดความเสียหายที่ได้รับจากการโจมตีปกติ 15%",
+      "required": "Boots of Speed",
+      "price": 700,
+      "type": "movement"
+   },
+   "402": {
+      "name": "Gilded Greaves",
+      "description": "+110 ต้านทานเวท\nสกิลติดตัว : ความเร็วการเคลื่อนที่ +60\nสกิลติดตัว : ป้องกันสถานะ 35%",
+      "required": "Boots of Speed",
+      "price": 690,
+      "type": "movement"
+   },
+   "403": {
+      "name": "Flashy Boots",
+      "description": "+10% ลดคูลดาวน\nสกิลติดตัว : ความเร็วเคลื่อนที่ +60",
+      "required": "Boots of Speed",
+      "price": 760,
+      "type": "movement"
+   },
+   "404": {
+      "name": "Enchanted Kicks",
+      "description": "สกิลติดตัว : ความเร็วเคลื่อนที่ +60\nสกิลติดตัว : เจาะเกราะเวท +75",
+      "required": "Boots of Speed",
+      "price": 790,
+      "type": "movement"
+   },
+   "405": {
+      "name": "War Boots",
+      "description": "+25% ความเร็วโจมตี\nสกิลติดตัว : ความเร็วเลื่อนที่ +60",
+      "required": "Boots of Speed",
+      "price": 660,
+      "type": "movement"
+   },
+   "406": {
+      "name": "Hermes’s Select",
+      "description": "สกิลติดตัว – Swift: เมื่อออกจากการต่อสู้จะได้รับความเร็วการเคลื่อนที่เพิ่มขึ้น 60 หน่วย\nสกิลติดตัว – ความเร็วเคลื่อนที่ +60",
+      "required": "Boots of Speed",
+      "price": 580,
+      "type": "movement"
+   },
+   "501": {
+      "name": "Loki’s Curse",
+      "description": "+150 พลังเวท +400 พลังชีวิต\nAcquire Frostbite สกิลติดตัว – Curse Power: เมื่อใช้สกิลโจมตีปกติครั้งต่อไปจะเพิ่มความเสียหายกายภาพ 35%(+45% โบนัสพลังเวท) ของพลังเวท\nสกิลติดตัว – โจมตีมอนสเตอร์ป่าแรงขึ้น 30% และได้รับ XP เมื่อฆ่ามอนสเตอร์ป่าเพิ่ม 35%\nสกิลติดตัว 3 – Seek and Destroy: การสังหารมอนสเตอร์ป่าจะทำให้ฮีโร่ได้รับพลังเวท +8 และมานาสูงสุด 30 หน่วย (ซ้อนทับสูงสุด 15 ครั้ง)",
+      "required": "Monster’s Bane, Ancient Scriptures, Ring of Vitality",
+      "price": 1750,
+      "type": "jungle"
+   },
+   "502": {
+      "name": "Leviathan",
+      "description": "+120 เกราะ\n+800 พลังชีวิต\nAcquire Frostbite\nสกิลติดตัว – Incantation: สร้างความเสียหายเวท 90 แก่ศัตรูรอบๆ ทุก 1 วิ (เพิ่ม 5 ต่อ Lv)\nสกิลติดตัว – Hunting: เพิ่มความเสียหายต่อมอนสเตอร์ป่า +30% และได้รับ XP เมื่อสังหารมอนสเตอร์ป่า +35%\nสกิลติดตัว – Stalk: การสังหารมอนสเตอร์ป่าจะทำให้ฮีโร่ได้รับ HP +70 (ซ้อนทับสูงสุด 15 ครั้ง)",
+      "required": "Gnoll Cleaver, Light Armor, Necklace of Vitality",
+      "price": 1750,
+      "type": "jungle"
+   },
+   "503": {
+      "name": "Soulreaver",
+      "description": "+80 พลังโจมตี, +10% ดูดเลือด\nAcquire Frostbite\nสกิลติดตัว: ลดคูลดาวน์ 15%\nสกิลติดตัว – Hunting: เพิ่มความเสียหายต่อมอนสเตอร์ป่า +30% และได้รับ XP เมื่อสังหารมอนสเตอร์ป่า +35%\nสกิลติดตัว – Stalk: การสังหารมอนสเตอร์ป่าจะทำให้ฮีโร่ได้รับพลังโจมตี +3 (ซ้อนทับสูงสุด 15 ครั้ง)",
+      "required": "Mr. Stabby, Chain Hammer, Magic Ring",
+      "price": 1750,
+      "type": "jungle"
+   },
+   "504": {
+      "name": "Firestorm Bow",
+      "description": "+15 พลังโจมตี\n+20% ความเร็วโจมตี\n+10% ดูดเลือด\nAcquire Frostbite\nสกิลติดตัว – Firestorm: การโจมตีปกติจะทำให้เป้าหมายติดขั้นสัญลักษณ์ โดยแต่ละขั้นจะสร้างความเสียหายวทเพิ่ม (18+ Lv ฮีโร่x0.5) หน่วย (ระยะไกลจะสร้างเพียง 75%) สูงสุด 6 ขั้น\nสกิลติดตัว – Hunting: โจมตีมอนสเตอร์ป่าแรงขึ้น 30% และได้รับ XP เมื่อฆ่ามอนสเตอร์ป่าเพิ่ม 35%\nสกิลติดตัว – Stalk: การฆ่ามอนสเตอร์ป่าจะได้รับความเจ็วโจมตี +2% (สูงสุด 15 ครั้ง)",
+      "required": "Stormy Bow, Dagger, Bloodied Club",
+      "price": 1750,
+      "type": "jungle"
+   },
+   "601": {
+      "name": "Soul Storm Badge",
+      "description": "+15 ฟื้นฟูมานา / 5วินาที\n+250เกราะ\n+500พลังชีวิต\n+40ฟื้นฟูพลังชีวิต\n+5% ความเร็วเคลื่อนที่\nสกิลติดตัว –Bounty : หากสถานะการเงิน และ XP ของตัวเองต่ำที่สุดในทีมจะได้รับ 5โกลด์ และXP ทุก3 วินาที (100ต่อนาที)\nสกิลติดตัว –Exploit : หลังสังหารหรือช่วยเหลือจะได้รับโบนัสโกลด์ และ XP  เพิ่มขึ้น30%\nสกิลพิเศษ –Force Shield : สร้างโล่ดูดเลือดรับความเสียหาย (800 +LV ฮีโร่ x80) แก่ฮีโร่พันธมิตรที่มี HPน้อยที่สุด พร้อมเพิ่มความเร็วเคลื่อนที่ 30% เป็นเวลา 3วินาที (คูลดาวน์ 45วินาที)",
+      "required": "",
+      "price": 1850,
+      "type": "support"
+   },
+   "602": {
+      "name": "Ring of Terror",
+      "description": "+90 พลังเวท\n+15% ลดคูลดาวน์\n+30 ฟื้นฟูมานา / 5 วินาที\n+5% ความเร็วเคลื่อนที่\nสกิลติดตัว –Bounty : หากสถานะการเงิน และ XP ของตัวเองต่ำที่สุดในทีมจะได้รับ 5โกลด์ และXP ทุก3 วินาที (100ต่อนาที)\nสกิลติดตัว –Exploit : หลังสังหารหรือช่วยเหลือจะได้รับโบนัสโกลด์ และ XP  เพิ่มขึ้น30%\nสกิลพิเศษ – Eye of the Fiend : ระบุตำแหน่งศัตรูที่ใกล้ที่สุด เป็นเวลา 4วินาที (คูลดาวน์ 45วินาที)",
+      "required": "",
+      "price": 1850,
+      "type": "support"
+   },
+   "603": {
+      "name": "Poseidon Emblem",
+      "description": "+20 ฟื้นฟูมานา\n+200 เกราะ\n+600 พลังชีวิต\nสกิลติดตัว – Aura : ปล่อยออร่าที่จะเพิ่มอัตราฟื้นฟู HP+20  และมานา+10 ให้ตัวเองและพันธมิตรใกล้ๆ (เพิ่มขึ้นตาม LV)\nสกิลติดตัว –Devotion : ทุก 30วินาที จะสะสมบัฟ 1ครั้ง(สูงสุด2ครั้ง) จากนั้นเมื่อครีปตายอยู่ใกล้ๆ จะหักบัฟที่สะสมไว้ 1ครั้ง และทำให้พันธมิตรที่ใกล้ที่สุดได้รับ 15โกลด์ และ 40XP\nสกิลติดตัว –Poseidon : เพิ่มอัตราการสร้างความเสียหาย 5% และการต้านทานความเสียหาย 10% แก่พันธมิตรรอบๆ",
+      "required": "",
+      "price": 1850,
+      "type": "support"
+   },
+   "604": {
+      "name": "Bracer of Purification",
+      "description": "+15% ลดคูลดาวน์\n+20 ฟื้นฟูมานา / 5วินาที\n+500 พลังชีวิต\nสกิลติดตัว – Aura : ปล่อยออร่าที่จะเพิ่มอัตราฟื้นฟู HP+20  และมานา+10 ให้ตัวเองและพันธมิตรใกล้ๆ (เพิ่มขึ้นตาม LV)\nสกิลติดตัว –Devotion : ทุก 30วินาที จะสะสมบัฟ 1ครั้ง(สูงสุด2ครั้ง) จากนั้นเมื่อครีปตายอยู่ใกล้ๆ จะหักบัฟที่สะสมไว้ 1ครั้ง และทำให้พันธมิตรที่ใกล้ที่สุดได้รับ 15โกลด์ และ 40XP\nสกิลพิเศษ – Purification Curse : ลบสถานะออกจากพันธมิตรในระยะพร้อมกบฟื้นฟู HP (160+LVx30)หน่วย และเพิ่มความเร็วเคลื่อนที่ขึ้น 20% เป็นเวลา 1วินาที จากนั้นพันธมิตรดังกล่าวจะวิ่งช้าลง 2วินาที (คูลดาวน์ 90วินาที)",
+      "required": "",
+      "price": 1850,
+      "type": "support"
+   }
+}

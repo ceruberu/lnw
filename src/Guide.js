@@ -10,12 +10,6 @@ import Tank from './images/classes/Tank.png';
 import Warrior from './images/classes/Warrior.png';
 import Icon from './images/heroes/Airi/icon.jpg';
 
-const MockHero = {
-  'airi' : {
-    type: "Assassin"
-  }
-};
-
 const Hero = (i) => 
   <Link to="/guide/hero/airi" className="hero" key={i}>
     <img className="heroThumbnail" alt="Airi" src={Icon} />

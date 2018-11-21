@@ -135,3 +135,57 @@
   justify-content: center;
   font-size: 12px;
 }
+
+.guideDescription {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.guideLike {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #5AB0FF;
+  border: 1px solid #5AB0FF;
+  border-radius: 6px;
+  height: 25px;
+}
+
+.guideLike:hover {
+  background-color: #5AB0FF;
+  color: white;
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+}
+
+.commentMeta {
+  display: flex;
+  flex-direction: row;
+  height: 24px;
+  font-size: 14px;
+}
+
+.commentProfile {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.commentAuthor {
+  margin-right: 10px;
+}
+
+.commentCreatedAt {
+  color: grey;
+}
+
+.commentContent {
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
+}
