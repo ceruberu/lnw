@@ -23,9 +23,9 @@
 
 .postCard {
   display: flex;
-  padding-right: 10px;
   height: 80px;
   flex-direction: row;
+  text-decoration: none;
 }
 
 .postCardLike {
@@ -43,6 +43,8 @@
   height: 60px;
   line-height: 20px;
   overflow: hidden;
+  color: black;
+  word-break: break-all;
 }
 
 .postCardDetails {
@@ -68,4 +70,8 @@
   width: 80px;
   height: 80px;
   padding: 10px;
+}
+
+.writeIcon {
+  color: #0B81EA;
 }

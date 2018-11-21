@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEdit } from '@fortawesome/free-solid-svg-icons';
+
 import './Community.css';
 import Thumbnail from './images/example.jpg';
 
 const Post = (i) => (
-  <div className="postCard" key={i}>
+  <Link to="/community/post/001" className="postCard" key={i}>
     <img 
       className="postCardThumbnail" 
       alt="Thumbnail"
@@ -19,7 +23,7 @@ const Post = (i) => (
         <span className="postCardAuthor">ceruberu</span>
       </div>
     </div>  
-  </div>
+  </Link>
 );
 
 class Community extends Component {
@@ -37,11 +41,12 @@ class Community extends Component {
           <div className="boardType">Funny</div>
         </div>
         <section>
-          <div>
-            <header className="sectionTitle">
-              Trending
-            </header>
-          </div>
+          <header className="sectionTitle">
+            Trending           
+            <Link to="/community/write">
+              <FontAwesomeIcon icon={faEdit} className="writeIcon" />
+            </Link>  
+          </header>
           <div className="postCardList">
             { Posts }
           </div> 

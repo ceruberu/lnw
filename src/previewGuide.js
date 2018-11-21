@@ -22,7 +22,7 @@ class PreviewGuide extends Component {
                 <span>[Wukong] </span>วิธีการเล่น Wukong ROV ให้เทพ คริ 100% พร้อมเทคนิคการเล่นแบบเทพๆ
               </div>
               <div className="previewGuideMeta">
-
+                <span>WukongMaster</span>
               </div>
             </div>
           </div>

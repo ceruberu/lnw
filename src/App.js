@@ -5,6 +5,8 @@ import Guide from './Guide';
 import GuideHero from './GuideHero';
 import GuidePost from './GuidePost';
 import Community from './Community';
+import CommunityPost from './CommunityPost';
+import CommunityWrite from './CommunityWrite';
 import './App.css';
 
 class App extends Component {
@@ -27,6 +29,8 @@ class App extends Component {
             <Route path="/guide/hero/:heroName" component={GuideHero}/>
             <Route path="/guide/post/:postId" component={GuidePost} />
             <Route path="/community" exact component={Community}/>
+            <Route path="/community/post/:postId" component={CommunityPost} />
+            <Route path="/community/write" component={CommunityWrite} />
           </Switch>
 
         </main>
