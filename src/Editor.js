@@ -12,7 +12,6 @@ import 'froala-editor/css/froala_editor.pkgd.min.css';
 import 'font-awesome/css/font-awesome.css';
 
 import FroalaEditor from 'react-froala-wysiwyg';
-import FroalaEditorInput from 'react-froala-wysiwyg/FroalaEditorInput';
 
 import './Editor.css';
 
@@ -29,7 +28,18 @@ class Editor extends Component {
           charCounterCount: false,
           placeholderText: "Share your thoughts",
           heightMin: 500,
-          editorClass: "asdasdasd"
+          toolbarButtonsXS: ['bold', 'italic', 'underline', 'strikeThrough', 'paragraphFormat', 'insertImage', 'insertVideo'],
+                  // Set max image size to 5MB.
+          imageMaxSize: 5 * 1024 * 1024,
+ 
+          // Allow to upload PNG and JPG.
+          imageAllowedTypes: ['jpeg', 'jpg', 'png'],
+
+          imageUploadToS3: {
+            bucket: 'editor',
+            region: 's3-ap-northeast-2',
+            keyStart: 'uploads/'
+          }
         }}
       />
     );

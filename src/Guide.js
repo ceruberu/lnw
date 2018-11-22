@@ -11,13 +11,13 @@ import Warrior from './images/classes/Warrior.png';
 import Icon from './images/heroes/Airi/icon.jpg';
 
 const Hero = (i) => 
-  <Link to="/guide/hero/airi" className="hero" key={i}>
+  <Link to="/guide/hero/airi" className="hero" key={`hero${i}`}>
     <img className="heroThumbnail" alt="Airi" src={Icon} />
     <span className="heroName">Airi</span>
   </Link>;
 
 const GuideCard = (i) =>
-  <Link to="guide/post/001" className="guideCard" key={i}>
+  <Link to="guide/post/001" className="guideCard" key={`guide${i}`}>
     <img className="guideThumbnail" alt="Airi" src={Icon} />
     <div className="guideMeta">
       <div className="guideTitle">
@@ -39,10 +39,9 @@ class Guide extends Component {
       Heroes.push(Hero(i));
     }
     for (var k = 0; k < 10; k++) {
-      Guides.push(GuideCard(i));
+      Guides.push(GuideCard(k));
     }
 
-    console.log(Heroes);
     return (
       <div>
         <div className="classFilter">
