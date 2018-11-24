@@ -1,15 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { ApolloProvider } from "react-apollo";
+
+import client from "./apollo";
+import "./index.css";
+import App from "./App";
+import Login from "./Login";
+import Signup from "./Signup";
+import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>, 
-  document.getElementById('root')
+  <ApolloProvider client={client}>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/login" component={Login} />
+        <Route path="/signup" component={Signup} />
+        <Route path="/" component={App} />
+      </Switch>
+    </BrowserRouter>
+  </ApolloProvider>,
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change

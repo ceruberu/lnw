@@ -7,6 +7,8 @@ import GuidePost from './GuidePost';
 import Community from './Community';
 import CommunityPost from './CommunityPost';
 import CommunityWrite from './CommunityWrite';
+import Profile from './Profile';
+
 import './App.css';
 
 class App extends Component {
@@ -16,6 +18,7 @@ class App extends Component {
         <header className="appHeader">
           <div className="gameLogo">ROV</div>
           <div className="appLogo">lnw</div>
+          <Profile />
         </header>
         <nav className="appNav">
           <NavLink to="/" exact className="navMenu">Home</NavLink>
