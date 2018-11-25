@@ -10,7 +10,7 @@ const cache = new InMemoryCache();
 const stateLink = withClientState({
   cache,
   defaults: {
-    isLoggedIn: !!localStorage.getItem("token")
+    // isLoggedIn: !!localStorage.getItem("token")
   },
   resolvers: {
     // Mutation: {
@@ -19,22 +19,8 @@ const stateLink = withClientState({
 });
 
 const httpLink = new HttpLink({
-  uri: "http://localhost:4000/graphql"
-  // credentials: 'same-origin'
-  // credentials: 'include'
-});
-
-const authLink = new ApolloLink((operation, forward) => {
-  const token = localStorage.getItem("token");
-  const authorizationHeader = token ? `Bearer ${token}` : "";
-
-  operation.setContext({
-    headers: {
-      authorization: authorizationHeader
-    }
-  });
-
-  return forward(operation);
+  uri: "http://localhost:4000/graphql",
+  credentials: 'include'
 });
 
 export default new ApolloClient({
@@ -49,7 +35,7 @@ export default new ApolloClient({
         );
       if (networkError) console.log(`[Network error]: ${networkError}`);
     }),
-    authLink,
+    // authLink,
     stateLink,
     httpLink
   ])

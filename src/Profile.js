@@ -5,37 +5,29 @@ import { Link } from 'react-router-dom';
 
 import './Profile.css';
 
-const LOGIN_QUERY = gql`
+const PROFILE_QUERY = gql`
   query {
-    isLoggedIn @client
+    me {
+      displayName
+    }
   }
 `;
 
-// const PROFILE_QUERY = gql`
-//   query {
-//     currentUser {
-//       id
-//       username
-//       picture
-//     }
-//   }
-// `;
-
+const LoginLink = () => (
+  <Link className="profileLogin" to="/login">
+    Login
+  </Link>
+)
 
 const Profile = () => (
-  <Query query={LOGIN_QUERY}>
-    {({ data: { isLoggedIn } }) => {
-      if (isLoggedIn) {
-        return (
-          <span>
-            HEY You are logged IN
-          </span>
-        );
-      }
+  <Query query={PROFILE_QUERY}>
+    {({loading, error, data }) => {
+      if (loading || error) return <LoginLink />;
+
       return (
-        <Link className="profileLogin" to="/login">
-          Login
-        </Link>
+        <div>
+          { data.me.displayName}
+        </div>
       );
     }}
   </Query>
