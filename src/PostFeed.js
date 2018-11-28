@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Query } from "react-apollo";
 import gql from "graphql-tag";
 import { Link } from "react-router-dom";
+import { dateInDistance } from './helpers/dateHelper';
 
 import Thumbnail from "./images/example.jpg";
 
@@ -12,6 +13,7 @@ const POSTFEED_QUERY = gql`
       nickname
     }
     postFeed(skip: $skip, limit: $limit, filter: $filter) {
+      _id
       title
       createdAt
       author {
@@ -27,6 +29,13 @@ const POSTFEED_QUERY = gql`
   }
 `;
 
+
+// formatDistance(
+//   comment.createdAt,
+//   new Date(),
+//   { addSuffix: true, locale: th }
+// );
+
 class PostFeed extends Component {
   render() {
     return (
@@ -40,9 +49,8 @@ class PostFeed extends Component {
         {({ loading, error, data }) => {
           if (loading) return <div> Loading...</div>;
           if (error) return <div> Error... </div>;
-
           return data.postFeed.map((post, i) => (
-            <Link to="/community/post/001" className="postCard" key={i}>
+            <Link to={`community/post/${post._id}`} className="postCard" key={post._id}>
               <img
                 className="postCardThumbnail"
                 alt="Thumbnail"
@@ -54,7 +62,7 @@ class PostFeed extends Component {
                 </div>
                 <div className="postCardDetails">
                   <span className="postCardLike">30 likes</span>
-                  <span className="postCardCreatedAt">10 hours ago</span>
+                  <span className="postCardCreatedAt">{dateInDistance(post.createdAt)}</span>
                   <span className="postCardAuthor">{post.author.nickname}</span>
                 </div>
               </div>
