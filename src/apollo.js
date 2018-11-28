@@ -35,7 +35,6 @@ export default new ApolloClient({
         );
       if (networkError) console.log(`[Network error]: ${networkError}`);
     }),
-    // authLink,
     stateLink,
     httpLink
   ])

@@ -1,38 +1,19 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEdit } from '@fortawesome/free-solid-svg-icons';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEdit } from "@fortawesome/free-solid-svg-icons";
 
-import './Community.css';
-import Thumbnail from './images/example.jpg';
+import PostFeed from './PostFeed';
+import "./Community.css";
 
-const Post = (i) => (
-  <Link to="/community/post/001" className="postCard" key={i}>
-    <img 
-      className="postCardThumbnail" 
-      alt="Thumbnail"
-      src={Thumbnail}
-    />
-    <div className="postCardMeta">
-      <div className="postCardTitle">
-        อยากเลิกเล่น ROV กับแฟนต้องทำยังไงครับ
-      </div>
-      <div className="postCardDetails">
-        <span className="postCardLike">30 likes</span>
-        <span className="postCardCreatedAt">10 hours ago</span>
-        <span className="postCardAuthor">ceruberu</span>
-      </div>
-    </div>  
-  </Link>
-);
+/* 
+
+Community Screen Query
+
+*/
 
 class Community extends Component {
   render() {
-    const Posts = [];
-    for (var i = 0; i < 10; i++) {
-      Posts.push(Post(i))
-    }
-
     return (
       <div className="communityMain">
         <div className="boardTypeList">
@@ -42,17 +23,16 @@ class Community extends Component {
         </div>
         <section>
           <header className="sectionTitle">
-            Trending           
+            Trending
             <Link to="/community/write">
               <FontAwesomeIcon icon={faEdit} className="writeIcon" />
-            </Link>  
+            </Link>
           </header>
           <div className="postCardList">
-            { Posts }
-          </div> 
+            <PostFeed />
+          </div>
         </section>
       </div>
-
     );
   }
 }

@@ -8,7 +8,8 @@ import './Profile.css';
 const PROFILE_QUERY = gql`
   query {
     me {
-      displayName
+      _id
+      nickname
     }
   }
 `;
@@ -23,10 +24,9 @@ const Profile = () => (
   <Query query={PROFILE_QUERY}>
     {({loading, error, data }) => {
       if (loading || error) return <LoginLink />;
-
       return (
         <div>
-          { data.me.displayName}
+          { data.me.nickname } 
         </div>
       );
     }}

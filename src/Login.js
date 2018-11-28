@@ -6,12 +6,6 @@ import { Link } from "react-router-dom";
 import "./Login.css";
 
 class Login extends Component {
-  constructor(props) {
-    super(props);
-
-    this.handleSocialLogin = this.handleSocialLogin.bind(this);
-  }
-
   componentDidMount() {
     window.fbAsyncInit = function() {
       window.FB.init({
@@ -43,10 +37,10 @@ class Login extends Component {
         <div className="loginLogo">Welcome to lnw</div>
         <p className="loginType">Social Login</p>
         <a 
-          className="socialLogin" 
+          className="socialLogin facebook" 
           href="http://localhost:4000/auth/facebook"
         >
-          Login with Facebook
+          Continue with Facebook
         </a>
         <div className="socialLogin">Login with Google</div>
         <p className="loginType">Email Login</p>

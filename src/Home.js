@@ -2,6 +2,33 @@ import React, { Component } from 'react';
 import './Home.css';
 import Thumbnail from './images/example.jpg';
 
+/* 
+
+Home Screen Query
+
+query HomeScreenQuery {
+
+  me {
+    id
+    username
+  }
+
+  postFeed(first:10, filter:'best') {
+    posts {
+      title
+      createdAt
+      author {
+        name
+      }
+      likeCount
+      commentCount
+    }
+  }
+
+}
+
+*/
+
 const Post = (i) => (
   <div className="postCard" key={i}>
     <img 
