@@ -1,53 +1,19 @@
-import React, { Component } from 'react';
-import './CommunityPost.css';
+import React, { Component } from "react";
 
-/* 
+import "./CommunityPost.css";
 
-CommunityPost Screen Query
-
-query CommunityPostScreenQuery {
-
-  me {
-    id
-    username
-  }
-
-  post(id: postId) {
-    title
-    content
-    createdAt
-    author {
-      name
-    }
-  }
-
-  comments(id: postId) {
-    content
-    replies {
-      content
-      author {
-        name
-      }
-    }
-    author {
-      name
-    }
-  }
-
-}
-
-*/
+import Post from './Post';
+import Comments from './Comments';
+import CommentWrite from './CommentWrite';
 
 class CommunityPost extends Component {
   render() {
+    const postId = this.props.match.params.postId;
     return (
-      <section className="CommunityPostTable">
-        <header className="CommunityPostTitle">
-          {this.props.title}
-        </header>
-        <div className="CommunityPostContent">
-
-        </div>
+      <section className="communityPostTable">
+        <Post postId={postId} />
+        <CommentWrite postId={postId} />
+        <Comments postId={postId} />
       </section>
     );
   }

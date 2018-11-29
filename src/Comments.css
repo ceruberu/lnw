@@ -1,0 +1,13 @@
+.commentAuthor {
+  color: #0B81EA;
+  font-size: 14px;
+}
+
+.commentCreatedAt {
+  color: grey;
+  font-size: 14px;
+}
+
+.commentContent {
+  line-height: 20px;
+}

@@ -8,8 +8,8 @@ import Editor from "./Editor";
 import "./CommunityWrite.css";
 
 const ADD_POST = gql`
-  mutation AddPost($input: AddPostInput) {
-    addPost(input: $input) {
+  mutation AddPost($type: String!,$title: String!, $content: String!) {
+    addPost(type: $type, title: $title, content: $content) {
       # returns a new post id and redirect to it
       _id
     }
@@ -30,7 +30,6 @@ class CommunityWrite extends Component {
     this.titleRef = React.createRef();
     this.selectRef = React.createRef();
 
-
     this.handleChange = this.handleChange.bind(this);
     this.handleModelChange = this.handleModelChange.bind(this);
   }
@@ -47,30 +46,29 @@ class CommunityWrite extends Component {
     });
   }
 
-  handleSubmit(addTodo) {
+  handleSubmit(addPost) {
     // Check Form
     // #1 Check if select is valid
-    if ( !this.state.select ) {
+    if (!this.state.select) {
       console.log("Select is empty");
     }
     // #2 Check if title is valid
-    if ( !this.state.title) {
+    if (!this.state.title) {
       this.titleRef.current.focus();
     }
     // #3 Check if model is valid
-    if ( !this.state.model) {
+    if (!this.state.model) {
       return console.log("Editor is empty");
     }
 
     // Run the AddPost mutation
-    addTodo({ variables: {
-      input: {
+    addPost({
+      variables: {
         type: this.state.select,
         content: this.state.model,
         title: this.state.title
       }
-    }})
-
+    });
   }
 
   componentDidMount() {
@@ -79,9 +77,9 @@ class CommunityWrite extends Component {
 
   render() {
     return (
-      <Mutation 
+      <Mutation
         mutation={ADD_POST}
-        onCompleted={({addPost})=> {
+        onCompleted={({ addPost }) => {
           this.props.history.push(`/community/post/${addPost._id}`);
         }}
       >
@@ -90,7 +88,6 @@ class CommunityWrite extends Component {
             className="communityWrite"
             onSubmit={e => {
               e.preventDefault();
-              console.log("CLICKED");
               this.handleSubmit(addPost);
             }}
           >

@@ -29,13 +29,6 @@ const POSTFEED_QUERY = gql`
   }
 `;
 
-
-// formatDistance(
-//   comment.createdAt,
-//   new Date(),
-//   { addSuffix: true, locale: th }
-// );
-
 class PostFeed extends Component {
   render() {
     return (

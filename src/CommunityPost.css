@@ -1,0 +1,46 @@
+.communityPostCard {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.communityPostTitle {
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  word-break: break-all;
+}
+
+.communityPostMeta {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.communityCreatedAt {
+  color: grey;
+  margin-left: 5px;
+}
+
+.communityViewCount {
+  color: grey;
+}
+
+.communityLikeCount {
+  color: grey; 
+  margin-left: 5px;
+}
+
+.communityCommentCount {
+  color: grey; 
+  margin-left: 5px;
+}
+
+.communityAuthor {
+  color: #0B81EA;
+  margin-left: 5px;
+}
+
