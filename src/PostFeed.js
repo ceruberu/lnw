@@ -8,10 +8,6 @@ import Thumbnail from "./images/example.jpg";
 
 const POSTFEED_QUERY = gql`
   query CommunityQuery($skip: Int!, $limit: Int!, $filter: String) {
-    me {
-      _id
-      nickname
-    }
     postFeed(skip: $skip, limit: $limit, filter: $filter) {
       _id
       title
