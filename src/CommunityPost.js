@@ -5,6 +5,7 @@ import "./CommunityPost.css";
 import Post from './Post';
 import Comments from './Comments';
 import CommentWrite from './CommentWrite';
+import CommentSubscription from './CommentsSubscription';
 
 class CommunityPost extends Component {
   render() {
@@ -14,6 +15,7 @@ class CommunityPost extends Component {
         <Post postId={postId} />
         <CommentWrite postId={postId} />
         <Comments postId={postId} />
+        <CommentSubscription postId={postId} />
       </section>
     );
   }

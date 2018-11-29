@@ -56,13 +56,14 @@ class CommentWrite extends Component {
         mutation={ADD_COMMENT}
         variables={{ postId: this.props.postId }}
         onCompleted={addComment => {
-          console.log("ADD COMMENT COMPLETE:: ", addComment);
+          this.setState({content: ""});
         }}
       >
-        {addComment => (
+        {(addComment, { loading } ) => (
           <form
             className="commentWriteForm"
             onSubmit={e => {
+              console.log("ON SUBMIT");
               e.preventDefault();
               this.handleSubmit(addComment);
             }}
@@ -80,7 +81,7 @@ class CommentWrite extends Component {
               {/* TODO Add Upload Image Feature */}
               <div className="commentUpload">+ Upload Image</div>
               <button className="commentSubmit" type="submit">
-                Send
+                {loading ? "Loading" : "Send"}
               </button>
             </div>
           </form>

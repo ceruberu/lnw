@@ -23,10 +23,10 @@ class Comments extends Component {
   render() {
     return (
       <Query query={COMMENTS_QUERY} variables={{ postId: this.props.postId }}>
-        {({ loading, error, data }) => {
-          if (loading || error) return <div>Loading</div>;
+        {({ loading, error, data, subscribeToMore }) => {
+          if (loading) return <div>Loading</div>;
+          if (error) return <div>Error</div>;
           return data.comments.map((comment, i) => {
-            console.log("COMMENTs", comment);
             return (
               <div className="comment" key={comment._id}>
                 <div>
