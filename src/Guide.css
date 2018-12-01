@@ -54,7 +54,7 @@
 
 .guideThumbnail {
   height: 80px;
-  width: 80px;
+  flex: 0 0 80px;
 }
 
 .guideMeta {

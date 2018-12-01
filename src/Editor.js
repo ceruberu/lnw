@@ -27,8 +27,9 @@ class Editor extends Component {
         config={{
           charCounterCount: false,
           placeholderText: "Share your thoughts",
-          heightMin: 500,
-          toolbarButtonsXS: ['bold', 'italic', 'underline', 'strikeThrough', 'paragraphFormat', 'insertImage', 'insertVideo'],
+          // heightMin: 500,
+          enter: $.FroalaEditor.ENTER_DIV,
+          toolbarButtonsXS: ['fullscreen', 'bold', 'italic', 'underline', 'strikeThrough', 'paragraphFormat', 'insertImage', 'insertVideo'],
                   // Set max image size to 5MB.
           imageMaxSize: 5 * 1024 * 1024,
  

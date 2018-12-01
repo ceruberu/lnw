@@ -1,0 +1,86 @@
+.heroIcon1, .heroIcon10, .heroIcon11, .heroIcon12, .heroIcon13, 
+.heroIcon14, .heroIcon15, .heroIcon16, .heroIcon17, .heroIcon18, 
+.heroIcon19, .heroIcon2, .heroIcon20, .heroIcon21, .heroIcon22, 
+.heroIcon23, .heroIcon24, .heroIcon25, .heroIcon26, .heroIcon27, 
+.heroIcon28, .heroIcon29, .heroIcon3, .heroIcon30, .heroIcon31, 
+.heroIcon32, .heroIcon33, .heroIcon34, .heroIcon35, .heroIcon36, 
+.heroIcon37, .heroIcon38, .heroIcon39, .heroIcon4, .heroIcon40, 
+.heroIcon41, .heroIcon42, .heroIcon43, .heroIcon44, .heroIcon45, 
+.heroIcon46, .heroIcon47, .heroIcon48, .heroIcon49, .heroIcon5, 
+.heroIcon50, .heroIcon51, .heroIcon52, .heroIcon53, .heroIcon54, 
+.heroIcon55, .heroIcon56, .heroIcon57, .heroIcon58, .heroIcon59, 
+.heroIcon6, .heroIcon60, .heroIcon61, .heroIcon62, .heroIcon63, 
+.heroIcon64, .heroIcon65, .heroIcon66, .heroIcon67, .heroIcon68, 
+.heroIcon69, .heroIcon7, .heroIcon70, .heroIcon8, .heroIcon9
+{ max-width: 100%; background-size: 100%; background-image: url('./images/heroSprite.png'); }
+ 
+.heroIcon1 { background-position: 0 0%; background-size: 100%; }
+.heroIcon10 { background-position: 0 1.449275%; background-size: 100%; }
+.heroIcon11 { background-position: 0 2.898551%; background-size: 100%; }
+.heroIcon12 { background-position: 0 4.347826%; background-size: 100%; }
+.heroIcon13 { background-position: 0 5.797101%; background-size: 100%; }
+.heroIcon14 { background-position: 0 7.246377%; background-size: 100%; }
+.heroIcon15 { background-position: 0 8.695652%; background-size: 100%; }
+.heroIcon16 { background-position: 0 10.144928%; background-size: 100%; }
+.heroIcon17 { background-position: 0 11.594203%; background-size: 100%; }
+.heroIcon18 { background-position: 0 13.043478%; background-size: 100%; }
+.heroIcon19 { background-position: 0 14.492754%; background-size: 100%; }
+.heroIcon2 { background-position: 0 15.942029%; background-size: 100%; }
+.heroIcon20 { background-position: 0 17.391304%; background-size: 100%; }
+.heroIcon21 { background-position: 0 18.84058%; background-size: 100%; }
+.heroIcon22 { background-position: 0 20.289855%; background-size: 100%; }
+.heroIcon23 { background-position: 0 21.73913%; background-size: 100%; }
+.heroIcon24 { background-position: 0 23.188406%; background-size: 100%; }
+.heroIcon25 { background-position: 0 24.637681%; background-size: 100%; }
+.heroIcon26 { background-position: 0 26.086957%; background-size: 100%; }
+.heroIcon27 { background-position: 0 27.536232%; background-size: 100%; }
+.heroIcon28 { background-position: 0 28.985507%; background-size: 100%; }
+.heroIcon29 { background-position: 0 30.434783%; background-size: 100%; }
+.heroIcon3 { background-position: 0 31.884058%; background-size: 100%; }
+.heroIcon30 { background-position: 0 33.333333%; background-size: 100%; }
+.heroIcon31 { background-position: 0 34.782609%; background-size: 100%; }
+.heroIcon32 { background-position: 0 36.231884%; background-size: 100%; }
+.heroIcon33 { background-position: 0 37.681159%; background-size: 100%; }
+.heroIcon34 { background-position: 0 39.130435%; background-size: 100%; }
+.heroIcon35 { background-position: 0 40.57971%; background-size: 100%; }
+.heroIcon36 { background-position: 0 42.028986%; background-size: 100%; }
+.heroIcon37 { background-position: 0 43.478261%; background-size: 100%; }
+.heroIcon38 { background-position: 0 44.927536%; background-size: 100%; }
+.heroIcon39 { background-position: 0 46.376812%; background-size: 100%; }
+.heroIcon4 { background-position: 0 47.826087%; background-size: 100%; }
+.heroIcon40 { background-position: 0 49.275362%; background-size: 100%; }
+.heroIcon41 { background-position: 0 50.724638%; background-size: 100%; }
+.heroIcon42 { background-position: 0 52.173913%; background-size: 100%; }
+.heroIcon43 { background-position: 0 53.623188%; background-size: 100%; }
+.heroIcon44 { background-position: 0 55.072464%; background-size: 100%; }
+.heroIcon45 { background-position: 0 56.521739%; background-size: 100%; }
+.heroIcon46 { background-position: 0 57.971014%; background-size: 100%; }
+.heroIcon47 { background-position: 0 59.42029%; background-size: 100%; }
+.heroIcon48 { background-position: 0 60.869565%; background-size: 100%; }
+.heroIcon49 { background-position: 0 62.318841%; background-size: 100%; }
+.heroIcon5 { background-position: 0 63.768116%; background-size: 100%; }
+.heroIcon50 { background-position: 0 65.217391%; background-size: 100%; }
+.heroIcon51 { background-position: 0 66.666667%; background-size: 100%; }
+.heroIcon52 { background-position: 0 68.115942%; background-size: 100%; }
+.heroIcon53 { background-position: 0 69.565217%; background-size: 100%; }
+.heroIcon54 { background-position: 0 71.014493%; background-size: 100%; }
+.heroIcon55 { background-position: 0 72.463768%; background-size: 100%; }
+.heroIcon56 { background-position: 0 73.913043%; background-size: 100%; }
+.heroIcon57 { background-position: 0 75.362319%; background-size: 100%; }
+.heroIcon58 { background-position: 0 76.811594%; background-size: 100%; }
+.heroIcon59 { background-position: 0 78.26087%; background-size: 100%; }
+.heroIcon6 { background-position: 0 79.710145%; background-size: 100%; }
+.heroIcon60 { background-position: 0 81.15942%; background-size: 100%; }
+.heroIcon61 { background-position: 0 82.608696%; background-size: 100%; }
+.heroIcon62 { background-position: 0 84.057971%; background-size: 100%; }
+.heroIcon63 { background-position: 0 85.507246%; background-size: 100%; }
+.heroIcon64 { background-position: 0 86.956522%; background-size: 100%; }
+.heroIcon65 { background-position: 0 88.405797%; background-size: 100%; }
+.heroIcon66 { background-position: 0 89.855072%; background-size: 100%; }
+.heroIcon67 { background-position: 0 91.304348%; background-size: 100%; }
+.heroIcon68 { background-position: 0 92.753623%; background-size: 100%; }
+.heroIcon69 { background-position: 0 94.202899%; background-size: 100%; }
+.heroIcon7 { background-position: 0 95.652174%; background-size: 100%; }
+.heroIcon70 { background-position: 0 97.101449%; background-size: 100%; }
+.heroIcon8 { background-position: 0 98.550725%; background-size: 100%; }
+.heroIcon9 { background-position: 0 100%; background-size: 100%; }

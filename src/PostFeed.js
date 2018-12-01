@@ -15,6 +15,8 @@ const POSTFEED_QUERY = gql`
       author {
         nickname
       }
+      voteUpCount
+      voteDownCount
       # comments {
       #   content
       #   createdAt
@@ -50,7 +52,7 @@ class PostFeed extends Component {
                   {post.title}
                 </div>
                 <div className="postCardDetails">
-                  <span className="postCardLike">30 likes</span>
+                  <span className="postCardLike">{post.voteUpCount - post.voteDownCount} likes</span>
                   <span className="postCardCreatedAt">{dateInDistance(post.createdAt)}</span>
                   <span className="postCardAuthor">{post.author.nickname}</span>
                 </div>

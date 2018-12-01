@@ -1,0 +1,9 @@
+.postVoteForm {
+  display: flex;
+  flex-direction: row;
+}
+
+.activeVote {
+  color: #0B81EA
+}
+

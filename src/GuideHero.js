@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import './GuideHero.css';
 import Splash from './images/heroes/Airi/Skins/splash.png';
 import Icon from './images/heroes/Airi/icon.jpg';
-import Passive from './images/heroes/Airi/Abillities/0.png';
-import Skill1 from './images/heroes/Airi/Abillities/1.png';
-import Skill2 from './images/heroes/Airi/Abillities/2.png';
-import Ultimate from './images/heroes/Airi/Abillities/3.png';
+// import Passive from './images/heroes/Airi/Abillities/0.png';
+// import Skill1 from './images/heroes/Airi/Abillities/1.png';
+// import Skill2 from './images/heroes/Airi/Abillities/2.png';
+// import Ultimate from './images/heroes/Airi/Abillities/3.png';
 
 const mockHeroSkills = [
   {
@@ -86,25 +86,25 @@ class GuideHero extends Component {
           <img 
             className={ selectedSkill === 0 ? "skill active" : "skill" } 
             alt="Passive" 
-            src={Passive}
+            // src={Passive}
             onClick={()=>this.onClickSkill(0)}
           />
           <img 
             className={ selectedSkill === 1 ? "skill active" : "skill" } 
             alt="Skill1" 
-            src={Skill1}
+            // src={Skill1}
             onClick={()=>this.onClickSkill(1)}
           />
           <img 
             className={ selectedSkill === 2 ? "skill active" : "skill" } 
             alt="Skill2" 
-            src={Skill2}
+            // src={Skill2}
             onClick={()=>this.onClickSkill(2)}
           />
           <img 
             className={ selectedSkill === 3 ? "skill active" : "skill" } 
             alt="Ultimate" 
-            src={Ultimate}
+            // src={Ultimate}
             onClick={()=>this.onClickSkill(3)}
           />
         </div>

@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import './Guide.css';
+import './heroSprite.css';
+
+import heroes from './images/heroes.json';
 import Assassin from './images/classes/Assassin.png';
 import Mage from './images/classes/Mage.png';
 import Marksman from './images/classes/Marksman.png';
@@ -11,9 +14,9 @@ import Warrior from './images/classes/Warrior.png';
 import Icon from './images/heroes/Airi/icon.jpg';
 
 const Hero = (i) => 
-  <Link to="/guide/hero/airi" className="hero" key={`hero${i}`}>
-    <img className="heroThumbnail" alt="Airi" src={Icon} />
-    <span className="heroName">Airi</span>
+  <Link to={`/guide/hero/${heroes[i].Name}`} className="hero" key={`hero${i}`}>
+    <div className={`heroThumbnail heroIcon${i}`} alt="Airi" />
+    <span className="heroName">{heroes[i].FullName}</span>
   </Link>;
 
 const GuideCard = (i) =>
@@ -35,7 +38,7 @@ class Guide extends Component {
   render() {
     var Heroes = [];
     var Guides = [];
-    for (var i = 0; i < 69; i++) {
+    for (var i = 1; i < 71; i++) {
       Heroes.push(Hero(i));
     }
     for (var k = 0; k < 10; k++) {
