@@ -16,11 +16,6 @@ class Community extends Component {
   render() {
     return (
       <div className="communityMain">
-        <div className="boardTypeList">
-          <div className="boardType">News</div>
-          <div className="boardType">General</div>
-          <div className="boardType">Funny</div>
-        </div>
         <section>
           <header className="sectionTitle">
             Trending

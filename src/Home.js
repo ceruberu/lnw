@@ -1,6 +1,12 @@
-import React, { Component } from 'react';
-import './Home.css';
-import Thumbnail from './images/example.jpg';
+import React, { Component } from "react";
+import Slider from "react-slick";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./Home.css";
+import Thumbnail from "./images/example.jpg";
 
 /* 
 
@@ -29,13 +35,9 @@ query HomeScreenQuery {
 
 */
 
-const Post = (i) => (
+const Post = i => (
   <div className="postCard" key={i}>
-    <img 
-      className="postCardThumbnail" 
-      alt="Thumbnail"
-      src={Thumbnail}
-    />
+    <img className="postCardThumbnail" alt="Thumbnail" src={Thumbnail} />
     <div className="postCardMeta">
       <div className="postCardTitle">
         อยากเลิกเล่น ROV กับแฟนต้องทำยังไงครับ
@@ -45,7 +47,7 @@ const Post = (i) => (
         <span className="postCardCreatedAt">10 hours ago</span>
         <span className="postCardAuthor">ceruberu</span>
       </div>
-    </div>  
+    </div>
   </div>
 );
 
@@ -55,26 +57,81 @@ class Home extends Component {
     for (var i = 0; i < 10; i++) {
       Posts.push(Post(i));
     }
+
+    const settingsNews = {
+      dots: true,
+      arrows: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
+
+    const settingsFeatured = {
+      arrows: true,
+      speed: 500,
+      infinite: false,
+      slidesToShow: 1.05,
+      slidesToScroll: 1,
+      className: "featureSlick"
+    };
+
     return (
       <div>
+        <Slider {...settingsNews}>
+          <div className="guideOfTheDay">
+            Diao chan เทคนิคการออกของ SS7 วิเคราะห์ไอเทมทุกชิ้น
+          </div>
+          <div className="guideOfTheDay">
+            Diao chan เทคนิคการออกของ SS7 วิเคราะห์ไอเทมทุกชิ้น
+          </div>
+          <div className="guideOfTheDay">
+            Diao chan เทคนิคการออกของ SS7 วิเคราะห์ไอเทมทุกชิ้น
+          </div>
+        </Slider>
+          <header className="featureHeader sectionTitle">
+            Featured
+            <div className="sectionArrow">
+              <FontAwesomeIcon icon={faChevronRight} />
+            </div>
+          </header>
+
+        <Slider {...settingsFeatured}>
+          <div className="featureWrap">
+            <div className="feature">
+              Diao chan เทคนิคการออกของ SS7 วิเคราะห์ไอเทมทุกชิ้น
+            </div>
+          </div>
+          <div className="featureWrap">
+            <div className="feature">
+              Diao chan เทคนิคการออกของ SS7 วิเคราะห์ไอเทมทุกชิ้น
+            </div>
+          </div>
+          <div className="featureWrap">
+            <div className="feature">
+              Diao chan เทคนิคการออกของ SS7 วิเคราะห์ไอเทมทุกชิ้น
+            </div>
+          </div>
+        </Slider>
         <section>
           <header className="sectionTitle">
-            Guide of the Day
+            Guides
+            <div className="sectionArrow">
+              <FontAwesomeIcon icon={faChevronRight} />
+            </div>
           </header>
-          <div className="guideOfTheDay">
-              Diao chan เทคนิคการออกของ SS7 วิเคราะห์ไอเทมทุกชิ้น
-          </div>
+          <div className="postCardList">{Posts}</div>
         </section>
         <section>
-        <header className="sectionTitle">
-          Top Posts
-        </header>
-        <div className="postCardList">
-          { Posts }
-        </div>
-      </section>
+          <header className="sectionTitle">
+            Top Posts
+            <div className="sectionArrow">
+              <FontAwesomeIcon icon={faChevronRight} />
+            </div>
+          </header>
+          <div className="postCardList">{Posts}</div>
+        </section>
       </div>
-
     );
   }
 }

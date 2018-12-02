@@ -1,0 +1,10 @@
+.class_assassin-2x, .class_mage-2x, .class_ranger-2x, .class_support-2x, .class_tank-2x, 
+.class_warrior-2x
+{ max-width: 100%; background-size: 100%; background-image: url('./images/classX2.png'); }
+ 
+.class_assassin-2x { background-position: 0 0%; background-size: 100%; }
+.class_mage-2x { background-position: 0 20%; background-size: 100%; }
+.class_ranger-2x { background-position: 0 40%; background-size: 100%; }
+.class_support-2x { background-position: 0 60%; background-size: 100%; }
+.class_tank-2x { background-position: 0 80%; background-size: 100%; }
+.class_warrior-2x { background-position: 0 100%; background-size: 100%; }

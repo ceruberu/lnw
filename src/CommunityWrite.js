@@ -19,7 +19,7 @@ const ADD_POST = gql`
 class CommunityWrite extends Component {
   constructor(props) {
     super(props);
-    console.log(this.props);
+    
     this.state = {
       title: "",
       model: "",

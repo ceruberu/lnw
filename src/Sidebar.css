@@ -1,0 +1,103 @@
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background:rgba(0,0,0,0.5);
+  z-index: 100;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 100vh;
+  background-color: lightslategray;
+  opacity: 1;
+}
+
+.sidebarProfile {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  height: 46px;
+}
+
+.sidebarNavMenu {
+  display: flex;
+  color: black;
+  text-decoration: none;
+  padding-left: 20px;
+  height: 70px;
+  align-items: center;
+  border-bottom: 1px solid white;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.sidebarBigMenu {
+  display: flex;
+  color: black;
+  text-decoration: none;
+  padding-left: 20px;
+  height: 50px;
+  align-items: center;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.sidebarSubMenu {
+  display: flex;
+  height: 46px;
+  margin-left: 50px;
+  border-bottom: 1px solid white;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.sidebarClasses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebarClasses a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 56px;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  background-color: lightgrey;
+  border-radius: 6px;
+  margin: 2px;
+}
+
+.sidebarClass {
+  width: 30px;
+  height: 30px;
+}
+
+.sidbarLogout {
+  display: flex;
+  height: 46px;
+  margin-left: 20px;
+  align-items: center;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.noScroll {
+  overflow: hidden;
+}

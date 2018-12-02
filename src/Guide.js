@@ -5,12 +5,6 @@ import './Guide.css';
 import './heroSprite.css';
 
 import heroes from './images/heroes.json';
-import Assassin from './images/classes/Assassin.png';
-import Mage from './images/classes/Mage.png';
-import Marksman from './images/classes/Marksman.png';
-import Support from './images/classes/Support.png';
-import Tank from './images/classes/Tank.png';
-import Warrior from './images/classes/Warrior.png';
 import Icon from './images/heroes/Airi/icon.jpg';
 
 const Hero = (i) => 
@@ -47,14 +41,6 @@ class Guide extends Component {
 
     return (
       <div>
-        <div className="classFilter">
-          <img className="classType" alt="Tank" src={Tank}></img>
-          <img className="classType" alt="Warrior" src={Warrior}></img>
-          <img className="classType" alt="Assassin" src={Assassin}></img>
-          <img className="classType" alt="Marksman" src={Marksman}></img>
-          <img className="classType" alt="Mage" src={Mage}></img>
-          <img className="classType" alt="Support" src={Support}></img>
-        </div>
         <div className="heroList">
           {Heroes}
         </div>

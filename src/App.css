@@ -17,7 +17,6 @@
   align-items: center;
   color: white;
   box-sizing: border-box;
-  padding: 0px 30px;
 }
 
 .appNav {
@@ -26,6 +25,14 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+}
+
+.headerIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 46px;
+  width: 46px;
 }
 
 .navMenu {
@@ -40,8 +47,8 @@
 
 .gameLogo {
   display: flex;
-  justify-self: flex-start;
   flex: 1;
+  justify-content: center;
 }
 
 .appLogo {
