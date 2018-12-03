@@ -81,12 +81,13 @@ class App extends Component {
                   <Route path="/guide" exact component={Guide} />
                   <Route path="/guide/hero/:heroName" component={GuideHero} />
                   <Route path="/guide/post/:postId" component={GuidePost} />
-                  <Route path="/community" exact component={Community} />
                   <Route
                     path="/community/post/:postId"
                     component={CommunityPost}
                   />
                   <Route path="/community/write" component={CommunityWrite} />
+                  <Route path="/community" component={Community} />
+
                 </Switch>
               </main>
             </div>

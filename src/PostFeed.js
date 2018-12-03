@@ -7,8 +7,8 @@ import { dateInDistance } from './helpers/dateHelper';
 import Thumbnail from "./images/example.jpg";
 
 const POSTFEED_QUERY = gql`
-  query CommunityQuery($skip: Int!, $limit: Int!, $filter: String) {
-    postFeed(skip: $skip, limit: $limit, filter: $filter) {
+  query CommunityQuery($skip: Int!, $limit: Int!, $filter: String, $type: String) {
+    postFeed(skip: $skip, limit: $limit, filter: $filter, type: $type) {
       _id
       title
       createdAt
@@ -29,12 +29,18 @@ const POSTFEED_QUERY = gql`
 
 class PostFeed extends Component {
   render() {
+    const { page, sort, type } = this.props.queryString; 
+    const atPage = page || 1;
+    const postsPerPage = 20;
+
     return (
       <Query
         query={POSTFEED_QUERY}
         variables={{
-          limit: 20,
-          skip: 0
+          limit: postsPerPage,
+          skip: (atPage-1)* postsPerPage,
+          filter: sort,
+          type
         }}
       >
         {({ loading, error, data }) => {

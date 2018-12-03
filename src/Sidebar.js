@@ -77,28 +77,28 @@ class Sidebar extends Component {
           <NavLink
             className="sidebarBigMenu"
             onClick={handleClose}
-            to="/community"
+            to="/community?sort=newest"
           >
             Community
           </NavLink>
           <NavLink
             className="sidebarSubMenu"
             onClick={handleClose}
-            to="/community/type/news"
+            to="/community?sort=newest&type=1"
           >
             News
           </NavLink>
           <NavLink
             className="sidebarSubMenu"
             onClick={handleClose}
-            to="/community/type/general"
+            to="/community?sort=newest&type=2"
           >
             General
           </NavLink>
           <NavLink
             className="sidebarSubMenu"
             onClick={handleClose}
-            to="/community/type/funny"
+            to="/community?sort=newest&type=3"
           >
             Funny
           </NavLink>
