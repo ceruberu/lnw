@@ -11,12 +11,16 @@
 
 .heroList {
   display: flex;
-  height: 210px;
   width: 300px;
   overflow: scroll;
   padding: 0px 30px;
   margin: 10px 0px;
   flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.heroListAll {
+  height: 210px;
 }
 
 .hero {

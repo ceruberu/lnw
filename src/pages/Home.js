@@ -6,38 +6,9 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Home.css";
-import Thumbnail from "./images/example.jpg";
-
-/* 
-
-Home Screen Query
-
-query HomeScreenQuery {
-
-  me {
-    id
-    username
-  }
-
-  postFeed(first:10, filter:'best') {
-    posts {
-      title
-      createdAt
-      author {
-        name
-      }
-      likeCount
-      commentCount
-    }
-  }
-
-}
-
-*/
 
 const Post = i => (
   <div className="postCard" key={i}>
-    <img className="postCardThumbnail" alt="Thumbnail" src={Thumbnail} />
     <div className="postCardMeta">
       <div className="postCardTitle">
         อยากเลิกเล่น ROV กับแฟนต้องทำยังไงครับ

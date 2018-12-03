@@ -6,8 +6,8 @@ import { ApolloProvider } from "react-apollo";
 import client from "./apollo";
 import "./index.css";
 import App from "./App";
-import Login from "./Login";
-import Signup from "./Signup";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(

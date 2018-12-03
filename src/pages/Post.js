@@ -2,12 +2,12 @@ import React, { Component, Fragment } from "react";
 import { Query } from "react-apollo";
 import gql from "graphql-tag";
 import FroalaEditorView from "react-froala-wysiwyg/FroalaEditorView";
-import Vote from "./Vote";
+import Vote from "../components/Vote";
 
 import "froala-editor/css/froala_style.min.css";
 import "./Post.css";
 
-import { dateInDistance } from "./helpers/dateHelper";
+import { dateInDistance } from "../helpers/dateHelper";
 
 const POST_QUERY = gql`
   query PostQuery($_id: ObjectID!) {

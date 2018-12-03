@@ -46,30 +46,30 @@ class Sidebar extends Component {
             Guide
           </NavLink>
           <div className="sidebarClasses">
-            <NavLink onClick={handleClose} to="/guide/class/tank">
+            <NavLink onClick={handleClose} to="/guide?type=Tank">
               <div className="sidebarClass class_tank-1x" />
               Tank
             </NavLink>
-            <NavLink onClick={handleClose} to="/guide/class/warrior">
+            <NavLink onClick={handleClose} to="/guide?type=Warrior">
               <div className="sidebarClass class_warrior-1x" />
               Warrior
             </NavLink>
             <NavLink
               onClick={handleClose}
-              to="/guide/class/assassin"
+              to="/guide?type=Assassin"
             >
               <div className="sidebarClass class_assassin-1x" />
               Assassin
             </NavLink>
-            <NavLink onClick={handleClose} to="/guide/class/ranger">
+            <NavLink onClick={handleClose} to="/guide?type=Ranger">
               <div className="sidebarClass class_ranger-1x" />
               Ranger
             </NavLink>
-            <NavLink onClick={handleClose} to="/guide/class/mage">
+            <NavLink onClick={handleClose} to="/guide?type=Mage">
               <div className="sidebarClass class_mage-1x" />
               Mage
             </NavLink>
-            <NavLink onClick={handleClose} to="/guide/class/support">
+            <NavLink onClick={handleClose} to="/guide?type=Support">
               <div className="sidebarClass class_support-1x" />
               Support
             </NavLink>

@@ -5,14 +5,14 @@ import gql from "graphql-tag";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faSearch } from "@fortawesome/free-solid-svg-icons";
 
-import Sidebar from "./Sidebar";
-import Home from "./Home";
-import Guide from "./Guide";
-import GuideHero from "./GuideHero";
-import GuidePost from "./GuidePost";
-import Community from "./Community";
-import CommunityPost from "./CommunityPost";
-import CommunityWrite from "./CommunityWrite";
+import Sidebar from "./components/Sidebar";
+import Home from "./pages/Home";
+import Guide from "./pages/Guide";
+import GuideHero from "./pages/GuideHero";
+import GuidePost from "./pages/GuidePost";
+import Community from "./pages/Community";
+import CommunityPost from "./pages/CommunityPost";
+import CommunityWrite from "./pages/CommunityWrite";
 
 import "./App.css";
 import "./classX1.css";

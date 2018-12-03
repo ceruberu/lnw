@@ -12,7 +12,7 @@
 .heroIcon6, .heroIcon60, .heroIcon61, .heroIcon62, .heroIcon63, 
 .heroIcon64, .heroIcon65, .heroIcon66, .heroIcon67, .heroIcon68, 
 .heroIcon69, .heroIcon7, .heroIcon70, .heroIcon8, .heroIcon9
-{ max-width: 100%; background-size: 100%; background-image: url('./images/heroSprite.png'); }
+{ max-width: 100%; background-size: 100%; background-image: url('../images/heroSprite.png'); }
  
 .heroIcon1 { background-position: 0 0%; background-size: 100%; }
 .heroIcon10 { background-position: 0 1.449275%; background-size: 100%; }

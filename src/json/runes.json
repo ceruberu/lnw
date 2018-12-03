@@ -1,0 +1,152 @@
+{
+   "101": {
+      "name": "Sage",
+      "effect": "Ability Power: 5.3",
+      "type": "red"
+   },
+   "102": {
+      "name": "Sword",
+      "effect": "Attack Damage: 3.2",
+      "type": "red"
+   },
+   "103": {
+      "name": "Onslaught",
+      "effect": "Attack Damage: 2\nArmor Pierce: 3.6",
+      "type": "red"
+   },
+   "104": {
+      "name": "Bloodlust",
+      "effect": "Attack Damage: 2.5\nLife Steal: 0.5%",
+      "type": "red"
+   },
+   "105": {
+      "name": "Rampage",
+      "effect": "Critical Chance: 0.7%\nCritical Damage: 3.6%",
+      "type": "red"
+   },
+   "106": {
+      "name": "Golden Body",
+      "effect": "Attack Speed: 1%\nMax HP: 33.7\nArmor: 2.3",
+      "type": "red"
+   },
+   "107": {
+      "name": "Desolate",
+      "effect": "Ability Power: 4.2\nMagic Pierce: 2.4",
+      "type": "red"
+   },
+   "108": {
+      "name": "Scepter",
+      "effect": "Ability Power: 4.2\nAttack Speed: 0.6%",
+      "type": "red"
+   },
+   "109": {
+      "name": "Rage",
+      "effect": "Critical Chance: 1.6%",
+      "type": "red"
+   },
+   "110": {
+      "name": "Awake",
+      "effect": "Attack Speed: 1.6%\nCritical Chance: 0.5%",
+      "type": "red"
+   },
+   "201": {
+      "name": "Colossus",
+      "effect": "Max HP: 75",
+      "type": "purple"
+   },
+   "202": {
+      "name": "Pray",
+      "effect": "Magic Life Steal: 1.6%",
+      "type": "purple"
+   },
+   "203": {
+      "name": "Essence Reaver",
+      "effect": "Life Steal: 1.6%",
+      "type": "purple"
+   },
+   "204": {
+      "name": "Throne",
+      "effect": "Critical Chance: 0.5%\nMax HP: 60",
+      "type": "purple"
+   },
+   "205": {
+      "name": "Immortal",
+      "effect": "Max HP: 60\nHP Regen: 4.5",
+      "type": "purple"
+   },
+   "206": {
+      "name": "Feast",
+      "effect": "Life Steal: 1%\nMagic Defense: 4.1",
+      "type": "purple"
+   },
+   "207": {
+      "name": "Blood Magic",
+      "effect": "Ability Power: 2.4\nMagic Life Steal: 1%",
+      "type": "purple"
+   },
+   "208": {
+      "name": "Protect",
+      "effect": "Max HP: 45\nHP Regen: 5.2\nMovement Speed: 0.4%",
+      "type": "purple"
+   },
+   "209": {
+      "name": "Assassinate",
+      "effect": "Attack Damage: 1.6\nMovement Speed: 1%",
+      "type": "purple"
+   },
+   "210": {
+      "name": "Spirit",
+      "effect": "Attack Speed: 1%\nMovement Speed: 1%",
+      "type": "purple"
+   },
+   "301": {
+      "name": "Great Wall",
+      "effect": "Armor: 9",
+      "type": "green"
+   },
+   "302": {
+      "name": "Herculean Power",
+      "effect": "Armor: 5\nMagic Defense: 5",
+      "type": "green"
+   },
+   "303": {
+      "name": "Prowess",
+      "effect": "Max HP: 37.5\nCooldown Speed: 0.6%",
+      "type": "green"
+   },
+   "304": {
+      "name": "Authority",
+      "effect": "Magic Defense: 9",
+      "type": "green"
+   },
+   "305": {
+      "name": "Secret Incantation",
+      "effect": "Ability Power: 2.4\nCooldown Speed: 0.7%",
+      "type": "green"
+   },
+   "306": {
+      "name": "Dragon’s Claw",
+      "effect": "Attack Damage: 0.9\nArmor Pierce: 6.4",
+      "type": "green"
+   },
+   "307": {
+      "name": "Stain",
+      "effect": "Attack Speed: 0.6\nMagic Pierce: 6.4",
+      "type": "green"
+   },
+   "308": {
+      "name": "Purity",
+      "effect": "Cooldown Speed: 1%",
+      "type": "green"
+   },
+   "309": {
+      "name": "Magic Heart",
+      "effect": "Magic Life Steal: 0.7%\nArmor: 5.9",
+      "type": "green"
+   },
+   "310": {
+      "name": "Holy Light",
+      "effect": "Armor: 2.7\nMagic Defense: 2.7\nCooldown Speed: 0.6%",
+      "type": "green"
+   }
+}

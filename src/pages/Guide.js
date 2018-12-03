@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import qs from "query-string";
 
 import './Guide.css';
 import './heroSprite.css';
 
-import heroes from './images/heroes.json';
-import Icon from './images/heroes/Airi/icon.jpg';
+import heroes from '../json/heroes.json';
+import Icon from '../images/heroes/Airi/icon.jpg';
 
-const Hero = (i) => 
-  <Link to={`/guide/hero/${heroes[i].Name}`} className="hero" key={`hero${i}`}>
-    <div className={`heroThumbnail heroIcon${i}`} alt="Airi" />
-    <span className="heroName">{heroes[i].FullName}</span>
+const Hero = (id) => 
+  <Link to={`/guide/hero/${heroes[id-1].Name}`} className="hero" key={`hero${id-1}`}>
+    <div className={`heroThumbnail heroIcon${id}`} alt="Airi" />
+    <span className="heroName">{heroes[id-1].FullName}</span>
   </Link>;
 
 const GuideCard = (i) =>
@@ -30,18 +31,27 @@ const GuideCard = (i) =>
 
 class Guide extends Component {
   render() {
-    var Heroes = [];
-    var Guides = [];
-    for (var i = 1; i < 71; i++) {
-      Heroes.push(Hero(i));
+    const queryString = qs.parse(this.props.location.search);
+    const { type } = queryString;
+    
+    let filteredHeroes = heroes;
+    if(type){
+      filteredHeroes = heroes.filter(hero => hero.Type === type);
     }
+
+    let Heroes = [];
+    let Guides = [];
+    filteredHeroes.forEach(hero => {
+      Heroes.push(Hero(hero.id));
+    })
+
     for (var k = 0; k < 10; k++) {
       Guides.push(GuideCard(k));
     }
 
     return (
       <div>
-        <div className="heroList">
+        <div className={type? "heroList" : "heroList heroListAll"}>
           {Heroes}
         </div>
         <section>

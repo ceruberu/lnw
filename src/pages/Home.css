@@ -47,7 +47,7 @@ section {
 .guideOfTheDay{
   display: flex !important;
   height: 240px;
-  background-image: url(./images/splash.jpg);
+  background-image: url(../images/splash.jpg);
   background-size: cover;
   color: white;
   box-sizing: border-box;
@@ -92,7 +92,7 @@ section {
   height: 200px;
   justify-content: flex-end;
   font-weight: bold;
-  background-image: url(./images/splash.jpg);
+  background-image: url(../images/splash.jpg);
   background-size: cover;
 }
 /* 

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Query } from "react-apollo";
 import gql from "graphql-tag";
 
-import { dateInDistance } from './helpers/dateHelper';
+import { dateInDistance } from '../helpers/dateHelper';
 
 import "./Comments.css";
 

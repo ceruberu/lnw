@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import './GuideHero.css';
-import Splash from './images/heroes/Airi/Skins/splash.png';
-import Icon from './images/heroes/Airi/icon.jpg';
-// import Passive from './images/heroes/Airi/Abillities/0.png';
-// import Skill1 from './images/heroes/Airi/Abillities/1.png';
-// import Skill2 from './images/heroes/Airi/Abillities/2.png';
-// import Ultimate from './images/heroes/Airi/Abillities/3.png';
+import Splash from '../images/heroes/Airi/Skins/splash.png';
+import Icon from '../images/heroes/Airi/icon.jpg';
 
 const mockHeroSkills = [
   {

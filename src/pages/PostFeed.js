@@ -2,9 +2,7 @@ import React, { Component } from "react";
 import { Query } from "react-apollo";
 import gql from "graphql-tag";
 import { Link } from "react-router-dom";
-import { dateInDistance } from './helpers/dateHelper';
-
-import Thumbnail from "./images/example.jpg";
+import { dateInDistance } from '../helpers/dateHelper';
 
 const POSTFEED_QUERY = gql`
   query CommunityQuery($skip: Int!, $limit: Int!, $filter: String, $type: String) {
@@ -48,11 +46,6 @@ class PostFeed extends Component {
           if (error) return <div> Error... </div>;
           return data.postFeed.map((post, i) => (
             <Link to={`community/post/${post._id}`} className="postCard" key={post._id}>
-              <img
-                className="postCardThumbnail"
-                alt="Thumbnail"
-                src={Thumbnail}
-              />
               <div className="postCardMeta">
                 <div className="postCardTitle">
                   {post.title}

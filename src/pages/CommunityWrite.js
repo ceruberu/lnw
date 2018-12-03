@@ -3,7 +3,7 @@ import { Mutation } from "react-apollo";
 import gql from "graphql-tag";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
-import Editor from "./Editor";
+import Editor from "../components/Editor";
 
 import "./CommunityWrite.css";
 

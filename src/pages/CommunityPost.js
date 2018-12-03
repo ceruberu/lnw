@@ -4,8 +4,8 @@ import "./CommunityPost.css";
 
 import Post from './Post';
 import Comments from './Comments';
-import CommentWrite from './CommentWrite';
-import CommentSubscription from './CommentsSubscription';
+import CommentWrite from '../components/CommentWrite';
+import CommentSubscription from '../CommentsSubscription';
 
 class CommunityPost extends Component {
   render() {

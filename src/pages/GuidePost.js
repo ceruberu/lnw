@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
 import { formatDistance, subDays } from 'date-fns';
-import th from 'date-fns/locale/th';
 import './GuidePost.css';
 
-import Splash from './images/heroes/Airi/Skins/splash.png';
-import Icon from './images/heroes/Airi/icon.jpg';
+import Splash from '../images/heroes/Airi/Skins/splash.png';
+import Icon from '../images/heroes/Airi/icon.jpg';
 // import Passive from './images/heroes/Airi/Abillities/0.png';
 // import Skill1 from './images/heroes/Airi/Abillities/1.png';
 // import Skill2 from './images/heroes/Airi/Abillities/2.png';
 // import Ultimate from './images/heroes/Airi/Abillities/3.png';
-import runeData from './images/runes.json';
-import profilePic from './images/display.jpg';
+import runeData from '../json/runes.json';
+import profilePic from '../images/display.jpg';
 
 const staticAddress = 'https://s3-ap-southeast-1.amazonaws.com/lnw-static';
 
@@ -40,7 +39,7 @@ function commentsTree (comments) {
     const timeInDistance = formatDistance(
       comment.createdAt,
       new Date(),
-      { addSuffix: true, locale: th }
+      { addSuffix: true }
     );
     commentsArray.push(
       <div key={`comment${i}`} className="comment">

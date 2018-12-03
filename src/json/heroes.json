@@ -1,0 +1,422 @@
+[
+ {
+   "id": 1,
+   "Name": "Airi",
+   "FullName": "Airi",
+   "Type": "Assassin"
+ },
+ {
+   "id": 2,
+   "Name": "Aleister",
+   "FullName": "Aleister",
+   "Type": "Mage"
+ },
+ {
+   "id": 3,
+   "Name": "Alice",
+   "FullName": "Alice",
+   "Type": "Support"
+ },
+ {
+   "id": 4,
+   "Name": "Amily",
+   "FullName": "Amily",
+   "Type": "Warrior"
+ },
+ {
+   "id": 5,
+   "Name": "Annette",
+   "FullName": "Annette",
+   "Type": "Support"
+ },
+ {
+   "id": 6,
+   "Name": "Arduin",
+   "FullName": "Arduin",
+   "Type": "Warrior"
+ },
+ {
+   "id": 7,
+   "Name": "Arthur",
+   "FullName": "Arthur",
+   "Type": "Warrior"
+ },
+ {
+   "id": 8,
+   "Name": "Arum",
+   "FullName": "Arum",
+   "Type": "Warrior"
+ },
+ {
+   "id": 9,
+   "Name": "Astrid",
+   "FullName": "Astrid",
+   "Type": "Tank"
+ },
+ {
+   "id": 10,
+   "Name": "Azzen_Ka",
+   "FullName": "Azzen Ka",
+   "Type": "Mage"
+ },
+ {
+   "id": 11,
+   "Name": "Baldum",
+   "FullName": "Baldum",
+   "Type": "Tank"
+ },
+ {
+   "id": 12,
+   "Name": "Butterfly",
+   "FullName": "Butterfly",
+   "Type": "Assassin"
+ },
+ {
+   "id": 13,
+   "Name": "Chaugnar",
+   "FullName": "Chaugnar",
+   "Type": "Support"
+ },
+ {
+   "id": 14,
+   "Name": "Cresht",
+   "FullName": "Cresht",
+   "Type": "Tank"
+ },
+ {
+   "id": 15,
+   "Name": "Diaochan",
+   "FullName": "Diaochan",
+   "Type": "Mage"
+ },
+ {
+   "id": 16,
+   "Name": "Elsu",
+   "FullName": "Elsu",
+   "Type": "Ranger"
+ },
+ {
+   "id": 17,
+   "Name": "Fennik",
+   "FullName": "Fennik",
+   "Type": "Ranger"
+ },
+ {
+   "id": 18,
+   "Name": "Gildur",
+   "FullName": "Gildur",
+   "Type": "Mage"
+ },
+ {
+   "id": 19,
+   "Name": "Grakk",
+   "FullName": "Grakk",
+   "Type": "Tank"
+ },
+ {
+   "id": 20,
+   "Name": "Ignis",
+   "FullName": "Ignis",
+   "Type": "Mage"
+ },
+ {
+   "id": 21,
+   "Name": "Ilumia",
+   "FullName": "Ilumia",
+   "Type": "Mage"
+ },
+ {
+   "id": 22,
+   "Name": "Jinnar",
+   "FullName": "Jinnar",
+   "Type": "Mage"
+ },
+ {
+   "id": 23,
+   "Name": "Kahlii",
+   "FullName": "Kahlii",
+   "Type": "Mage"
+ },
+ {
+   "id": 24,
+   "Name": "Kil_Groth",
+   "FullName": "Kil’Groth",
+   "Type": "Warrior"
+ },
+ {
+   "id": 25,
+   "Name": "Kriknak",
+   "FullName": "Kriknak",
+   "Type": "Assassin"
+ },
+ {
+   "id": 26,
+   "Name": "Krixi",
+   "FullName": "Krixi",
+   "Type": "Mage"
+ },
+ {
+   "id": 27,
+   "Name": "Lauriel",
+   "FullName": "Lauriel",
+   "Type": "Mage"
+ },
+ {
+   "id": 28,
+   "Name": "Liliana",
+   "FullName": "Liliana",
+   "Type": "Mage"
+ },
+ {
+   "id": 29,
+   "Name": "Lindis",
+   "FullName": "Lindis",
+   "Type": "Ranger"
+ },
+ {
+   "id": 30,
+   "Name": "Lu_Bu",
+   "FullName": "Lu Bu",
+   "Type": "Warrior"
+ },
+ {
+   "id": 31,
+   "Name": "Lumburr",
+   "FullName": "Lumburr",
+   "Type": "Tank"
+ },
+ {
+   "id": 32,
+   "Name": "Maloch",
+   "FullName": "Maloch",
+   "Type": "Warrior"
+ },
+ {
+   "id": 33,
+   "Name": "Marja",
+   "FullName": "Marja",
+   "Type": "Mage"
+ },
+ {
+   "id": 34,
+   "Name": "Max",
+   "FullName": "Max",
+   "Type": "Tank"
+ },
+ {
+   "id": 35,
+   "Name": "Mganga",
+   "FullName": "Mganga",
+   "Type": "Mage"
+ },
+ {
+   "id": 36,
+   "Name": "Mina",
+   "FullName": "Mina",
+   "Type": "Tank"
+ },
+ {
+   "id": 37,
+   "Name": "Moren",
+   "FullName": "Moren",
+   "Type": "Ranger"
+ },
+ {
+   "id": 38,
+   "Name": "Murad",
+   "FullName": "Murad",
+   "Type": "Assassin"
+ },
+ {
+   "id": 39,
+   "Name": "Nakroth",
+   "FullName": "Nakroth",
+   "Type": "Assassin"
+ },
+ {
+   "id": 40,
+   "Name": "Natalya",
+   "FullName": "Natalya",
+   "Type": "Mage"
+ },
+ {
+   "id": 41,
+   "Name": "Omega",
+   "FullName": "Omega",
+   "Type": "Tank"
+ },
+ {
+   "id": 42,
+   "Name": "Omen",
+   "FullName": "Omen",
+   "Type": "Warrior"
+ },
+ {
+   "id": 43,
+   "Name": "Ormarr",
+   "FullName": "Ormarr",
+   "Type": "Warrior"
+ },
+ {
+   "id": 44,
+   "Name": "Peura",
+   "FullName": "Peura",
+   "Type": "Support"
+ },
+ {
+   "id": 45,
+   "Name": "Preyta",
+   "FullName": "Preyta",
+   "Type": "Mage"
+ },
+ {
+   "id": 46,
+   "Name": "Raz",
+   "FullName": "Raz",
+   "Type": "Mage"
+ },
+ {
+   "id": 47,
+   "Name": "Rourke",
+   "FullName": "Rourke",
+   "Type": "Warrior"
+ },
+ {
+   "id": 48,
+   "Name": "Roxi",
+   "FullName": "Roxi",
+   "Type": "Warrior"
+ },
+ {
+   "id": 49,
+   "Name": "Ryoma",
+   "FullName": "Ryoma",
+   "Type": "Warrior"
+ },
+ {
+   "id": 50,
+   "Name": "Skud",
+   "FullName": "Skud",
+   "Type": "Warrior"
+ },
+ {
+   "id": 51,
+   "Name": "Slimz",
+   "FullName": "Slimz",
+   "Type": "Ranger"
+ },
+ {
+   "id": 52,
+   "Name": "Taara",
+   "FullName": "Taara",
+   "Type": "Tank"
+ },
+ {
+   "id": 53,
+   "Name": "TeeMee",
+   "FullName": "TeeMee",
+   "Type": "Support"
+ },
+ {
+   "id": 54,
+   "Name": "Tel_Annas",
+   "FullName": "Tel’Annas",
+   "Type": "Ranger"
+ },
+ {
+   "id": 55,
+   "Name": "Thane",
+   "FullName": "Thane",
+   "Type": "Tank"
+ },
+ {
+   "id": 56,
+   "Name": "Toro",
+   "FullName": "Toro",
+   "Type": "Tank"
+ },
+ {
+   "id": 57,
+   "Name": "Tulen",
+   "FullName": "Tulen",
+   "Type": "Mage"
+ },
+ {
+   "id": 58,
+   "Name": "Valhein",
+   "FullName": "Valhein",
+   "Type": "Ranger"
+ },
+ {
+   "id": 59,
+   "Name": "Veera",
+   "FullName": "Veera",
+   "Type": "Mage"
+ },
+ {
+   "id": 60,
+   "Name": "Violet",
+   "FullName": "Violet",
+   "Type": "Ranger"
+ },
+ {
+   "id": 61,
+   "Name": "Wiro",
+   "FullName": "Wiro",
+   "Type": "Tank"
+ },
+ {
+   "id": 62,
+   "Name": "Wisp",
+   "FullName": "Wisp",
+   "Type": "Ranger"
+ },
+ {
+   "id": 63,
+   "Name": "Wukong",
+   "FullName": "Wukong",
+   "Type": "Assassin"
+ },
+ {
+   "id": 64,
+   "Name": "Xeniel",
+   "FullName": "Xeniel",
+   "Type": "Tank"
+ },
+ {
+   "id": 65,
+   "Name": "Y_Bneth",
+   "FullName": "Y’Bneth",
+   "Type": "Tank"
+ },
+ {
+   "id": 66,
+   "Name": "Yorn",
+   "FullName": "Yorn",
+   "Type": "Ranger"
+ },
+ {
+   "id": 67,
+   "Name": "Zanis",
+   "FullName": "Zanis",
+   "Type": "Warrior"
+ },
+ {
+   "id": 68,
+   "Name": "Zephys",
+   "FullName": "Zephys",
+   "Type": "Warrior"
+ },
+ {
+   "id": 69,
+   "Name": "Zill",
+   "FullName": "Zill",
+   "Type": "Mage"
+ },
+ {
+   "id": 70,
+   "Name": "Zuka",
+   "FullName": "Zuka",
+   "Type": "Warrior"
+ }
+]
