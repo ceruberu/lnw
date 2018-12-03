@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import GoogleLogo from './images/g-logo.png';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faEdit } from '@fortawesome/free-solid-svg-icons';
 
@@ -29,6 +30,16 @@ class Login extends Component {
       js.src = "https://connect.facebook.net/en_US/sdk.js";
       fjs.parentNode.insertBefore(js, fjs);
     })(document, "script", "facebook-jssdk");
+
+    const gapiScript = document.createElement('script')
+    gapiScript.src = 'https://apis.google.com/js/api.js?onload=onGapiLoad'
+    window.onGapiLoad = function onGapiLoad() {
+      window.gapi.load('auth', {'callback': onAuthApiLoad})
+      function onAuthApiLoad() {
+        window.gapi.auth.init()
+      }
+    }
+    document.body.appendChild(gapiScript)
   }
 
   render() {
@@ -42,7 +53,12 @@ class Login extends Component {
         >
           Continue with Facebook
         </a>
-        <div className="socialLogin">Login with Google</div>
+        <a className="socialLogin google"
+          href="http://localhost:4000/auth/google"
+        >
+          <img className="socialLogo" alt="googleLogo" src={GoogleLogo}  />
+          Continue with Google
+        </a>
         <p className="loginType">Email Login</p>
         <form className="emailLoginForm">
           <input
