@@ -7,6 +7,10 @@ import { WebSocketLink } from "apollo-link-ws";
 import { withClientState } from "apollo-link-state";
 import { getMainDefinition } from "apollo-utilities";
 
+const isProduction = process.env.NODE_ENV === "production";
+const serverURL = isProduction ? "https://api.ceruberu.com/graphql" : "http://localhost:4000/graphql"; 
+const wsURL = isProduction ? "ws://api.ceruberu.com/graphql" : "ws://localhost:4000/graphql";
+
 const cache = new InMemoryCache();
 
 const stateLink = withClientState({
@@ -21,12 +25,12 @@ const stateLink = withClientState({
 });
 
 const httpLink = new HttpLink({
-  uri: "http://localhost:4000/graphql",
+  uri: serverURL,
   credentials: "include"
 });
 
 const wsLink = new WebSocketLink({
-  uri: "ws://localhost:4000/graphql",
+  uri: wsURL,
   options: {
     reconnect: true
   }

@@ -6,6 +6,9 @@ import GoogleLogo from '../images/g-logo.png';
 
 import "./Login.css";
 
+const isProduction = process.env.NODE_ENV === "production";
+const serverURL = isProduction ? "https://api.ceruberu.com" : "http://localhost:4000"; 
+
 class Login extends Component {
   componentDidMount() {
     window.fbAsyncInit = function() {
@@ -49,12 +52,12 @@ class Login extends Component {
         <p className="loginType">Social Login</p>
         <a 
           className="socialLogin facebook" 
-          href="http://localhost:4000/auth/facebook"
+          href={`${serverURL}/auth/facebook`}
         >
           Continue with Facebook
         </a>
         <a className="socialLogin google"
-          href="http://localhost:4000/auth/google"
+          href={`${serverURL}/auth/google`}
         >
           <img className="socialLogo" alt="googleLogo" src={GoogleLogo}  />
           Continue with Google
