@@ -9,7 +9,7 @@ import { getMainDefinition } from "apollo-utilities";
 
 const isProduction = process.env.NODE_ENV === "production";
 const serverURL = isProduction ? "https://api.ceruberu.com/graphql" : "http://localhost:4000/graphql"; 
-const wsURL = isProduction ? "ws://api.ceruberu.com/graphql" : "ws://localhost:4000/graphql";
+const wsURL = isProduction ? "wss://api.ceruberu.com/graphql" : "ws://localhost:4000/graphql";
 
 const cache = new InMemoryCache();
 
