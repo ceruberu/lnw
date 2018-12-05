@@ -6,7 +6,6 @@ import './Guide.css';
 import './heroSprite.css';
 
 import heroes from '../json/heroes.json';
-import Icon from '../images/heroes/Airi/icon.jpg';
 
 const Hero = (id) => 
   <Link to={`/guide/hero/${heroes[id-1].Name}`} className="hero" key={`hero${id-1}`}>
@@ -16,7 +15,7 @@ const Hero = (id) =>
 
 const GuideCard = (i) =>
   <Link to="guide/post/001" className="guideCard" key={`guide${i}`}>
-    <img className="guideThumbnail" alt="Airi" src={Icon} />
+    <img className="guideThumbnail" alt="Airi" />
     <div className="guideMeta">
       <div className="guideTitle">
         Airi สายเปิดอัลติทุกทุกทุก นินจาสาวที่โลกลืม! Airi สายเปิดอัลติทุกทุกทุกทุก นินจาสาวที่โลกลืม!Airi สายเปิดอัลติ นินจาสาวที่โลกลืม!Airi สายเปิดอัลติ ทุกทุกทุกทุกนินจาสาวที่โลกลืม!

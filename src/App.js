@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import { Query } from "react-apollo";
 import gql from "graphql-tag";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 import Sidebar from "./components/Sidebar";
 import Home from "./pages/Home";
@@ -62,6 +62,12 @@ class App extends Component {
             ) : null}
             <div className="App">
               <header className="appHeader">
+                <input
+                  type="text"
+                  className="searchBar"
+                  placeholder="Search..."
+                />
+                <div className="gameLogo">ROV</div>
                 <div
                   className="headerIcon"
                   onClick={() => {
@@ -69,10 +75,6 @@ class App extends Component {
                   }}
                 >
                   <FontAwesomeIcon icon={faBars} />
-                </div>
-                <div className="gameLogo">ROV</div>
-                <div className="headerIcon">
-                  <FontAwesomeIcon icon={faSearch} />
                 </div>
               </header>
               <main className="appMain">
@@ -87,7 +89,6 @@ class App extends Component {
                   />
                   <Route path="/community/write" component={CommunityWrite} />
                   <Route path="/community" component={Community} />
-
                 </Switch>
               </main>
             </div>

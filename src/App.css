@@ -16,10 +16,11 @@
   background-color: #0B81EA;
   display: flex;
   height: 46px;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: center;
   color: white;
   box-sizing: border-box;
+  justify-content: space-between;
 }
 
 .appNav {
@@ -32,10 +33,43 @@
 
 .headerIcon {
   display: flex;
+  flex: 0 0 46px;
   justify-content: center;
   align-items: center;
+}
+
+.searchBar {
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  padding: 0;
+  padding-left: 46px;
   height: 46px;
   width: 46px;
+  box-sizing: border-box;
+  background-image: url(./images/search.png);
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: 16px center;
+  background-color: #0B81EA;
+  color: #0B81EA;
+  font-size: 14px;
+  border: none;
+}
+
+.searchBar::placeholder {
+  color: #0B81EA;
+  font-size: 14px;
+}
+
+.searchBar:focus {
+  width: 100%;
+  background-color: white;
+  background-image: url(./images/search-focus.png);
+  color: #0B81EA;
+}
+
+.searchBar:focus + .gameLogo {
+  display: none;
 }
 
 .navMenu {
