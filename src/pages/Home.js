@@ -38,15 +38,6 @@ class Home extends Component {
       slidesToScroll: 1
     };
 
-    const settingsFeatured = {
-      arrows: true,
-      speed: 500,
-      infinite: false,
-      slidesToShow: 1.05,
-      slidesToScroll: 1,
-      className: "featureSlick"
-    };
-
     return (
       <div>
         <Slider {...settingsNews}>
@@ -58,30 +49,6 @@ class Home extends Component {
           </div>
           <div className="guideOfTheDay">
             Diao chan เทคนิคการออกของ SS7 วิเคราะห์ไอเทมทุกชิ้น
-          </div>
-        </Slider>
-          <header className="featureHeader sectionTitle">
-            Featured
-            <div className="sectionArrow">
-              <FontAwesomeIcon icon={faChevronRight} />
-            </div>
-          </header>
-
-        <Slider {...settingsFeatured}>
-          <div className="featureWrap">
-            <div className="feature">
-              Diao chan เทคนิคการออกของ SS7 วิเคราะห์ไอเทมทุกชิ้น
-            </div>
-          </div>
-          <div className="featureWrap">
-            <div className="feature">
-              Diao chan เทคนิคการออกของ SS7 วิเคราะห์ไอเทมทุกชิ้น
-            </div>
-          </div>
-          <div className="featureWrap">
-            <div className="feature">
-              Diao chan เทคนิคการออกของ SS7 วิเคราะห์ไอเทมทุกชิ้น
-            </div>
           </div>
         </Slider>
         <section>

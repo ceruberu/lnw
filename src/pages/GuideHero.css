@@ -34,37 +34,6 @@
 .skill {
   width: 50px;
   height: 50px;
-  opacity: 0.5;
-}
-
-.skill.active {
-  opacity: 1;
-}
-
-.heroSkillDescription {
-  padding: 0px 20px;
-}
-
-.heroSkillName {
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.heroSkillCooldown {
-  margin-left: 20px;
-  font-size: 14px;
-  color: orange;
-}
-
-.heroSkillMana {
-  margin-left: 20px;
-  font-size: 14px;
-  color: #0965B7;
-}
-
-.heroSkillDetail {
-  padding: 10px 0px;
-  font-size: 14px;
 }
 
 .guideCleanCard {

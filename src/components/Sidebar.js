@@ -32,13 +32,6 @@ class Sidebar extends Component {
             Main
           </NavLink>
           <NavLink
-            className="sidebarNavMenu"
-            onClick={handleClose}
-            to="/featured"
-          >
-            Featured
-          </NavLink>
-          <NavLink
             className="sidebarBigMenu"
             onClick={handleClose}
             to="/guide"
